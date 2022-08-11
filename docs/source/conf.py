@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Robot\n odometry & control'
+copyright = '2022, Piotr'
+author = 'Piotr'
 
 release = '0.1'
 version = '0.1.0'
@@ -30,6 +30,15 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+
+html_theme_options = {
+    'collapse_navigation': False,
+    'logo_only': True,
+    'sticky_navigation': True,
+    'navigation_depth': -1,
+}
+html_logo = "images/logo.png"
+
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
