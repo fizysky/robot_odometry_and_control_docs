@@ -15,7 +15,7 @@ This is a ROS package developed for ... idk
    para
 
 .. toctree::
-   :maxdepth: 1
+   :caption: Code
    :hidden:
    
    code
