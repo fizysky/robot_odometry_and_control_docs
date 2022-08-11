@@ -8,6 +8,10 @@ Robot odometry & control Documentation
 
 This is a ROS package developed for ... idk
 
+.. note::
+
+   This project is under active development.
+   
 .. toctree::
    :maxdepth: 1
    :caption: Getting started
