@@ -1,4 +1,5 @@
-Documentation for ROS package: Robot Odometry&Control
+Documentation for ROS package: 
+  Robot Odometry&Control
 =====================================================
 
 This GitHub repository includes Sphinx docs.
