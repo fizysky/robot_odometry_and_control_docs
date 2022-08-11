@@ -37,7 +37,7 @@ html_theme_options = {
     'sticky_navigation': True,
     'navigation_depth': -1,
 }
-html_logo = "images/logo.png"
+html_logo = "images/logoW.png"
 
 
 # -- Options for EPUB output
