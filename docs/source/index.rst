@@ -16,8 +16,7 @@ This is a ROS package developed for ... idk
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
-
+   
    code
 
 
