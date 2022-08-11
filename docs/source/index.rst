@@ -3,26 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to czysty's documentation!
-==================================
+Robot odometry & control Documentation
+======================================
+
+This is a ROS package developed for ... idk
 
 .. toctree::
    :maxdepth: 1
-   :caption: Opis:
+   :caption: Getting started
    
    para
 
 .. toctree::
    :maxdepth: 1
-   :caption: Kod:
+   :hidden:
 
    code
 
 
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
