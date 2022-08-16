@@ -44,6 +44,3 @@ html_logo = "images/logoW.png"
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-breathe_projects = {
-    "doxy": "./xml/",
-}
