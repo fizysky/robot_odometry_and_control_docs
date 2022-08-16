@@ -1,33 +1,47 @@
-**************
-Concept
-**************
+***************
+ROS Integration
+***************
 
-TODO
+Each wheel velocity and steer angle is publish in ros messeges of type 
+``mobie_robots_kinematic/VelocityWheel`` and calcuation are done base on input linear and 
+angular velocity passed in ros messeges of type ``geometry_msgs/Twist``.
 
-Configuaration file
-*******************
+Odometry topic and transform are publish only when information about each wheel welocity are 
+avaliable in ros topic of type *mobie_robots_kinematic/VelocityWheel*
 
-TODO
+By defaul this package:
 
-Building
-********
+* subscribe to:
 
-TODO
+  * /*robot_name*/cmd_vel
+  
+    * ``geometry_msgs/Twist``
+  * /*robot_name*/wheel_feedback
+  
+    * ``mobie_robots_kinematic/VelocityWheel``
 
-Basic Usage
-***********
+* publish
 
-TODO
+  * /*robot_name*/velocity
+  
+    * mobie_robots_kinematic/VelocityWheel
+  * /*robot_name*/odom 
+  
+    * nav_msgs/Odometry
 
-Nodes
-*****
+Each of names can be customized in configuration file.
 
-Subscribed Topics
-=================
-TODO
+Custom messege
+==============
 
-Published Topics
-================
+This package provide customized messeges that helps organize data in ros network
 
-TODO
+* ``mobie_robots_kinematic/VelocityWheel``
+  
+    * mobie_robots_kinematic/motor[] values
+* ``mobie_robots_kinematic/VelocityWheel``
 
+    * uint32 ID
+    * float32 LinVelocity
+    * float32 AngVelocity
+    * float32 steerAngle #
