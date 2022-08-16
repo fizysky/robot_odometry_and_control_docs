@@ -17,7 +17,7 @@ kinematics:
    This project is under active development.
    
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Getting started
    
    para
