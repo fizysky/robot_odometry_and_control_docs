@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    "breathe",
 ]
 
 intersphinx_mapping = {
@@ -42,3 +43,7 @@ html_logo = "images/logoW.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+breathe_projects = {
+    "doxy": "./xml/",
+}

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classEntity" kind="class" language="C++" prot="public">
+    <compoundname>Entity</compoundname>
+    <includes refid="plik_8hpp" local="no">plik.hpp</includes>
+    <innerclass refid="classEntity_1_1Entity__local" prot="public">Entity::Entity_local</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classEntity_1aae071f833fcdfdb6983c4a5aadc7829f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Entity::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Entity::x</qualifiedname>
+        <briefdescription>
+<para>bjf,jfg </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>note </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="16" column="9" bodyfile="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEntity_1a3032094a99240e958512727451630e7b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Entity::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Entity::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="16" column="11" bodyfile="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEntity_1a980f368aa07ce358583982821533a54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Entity::Entity</definition>
+        <argsstring>()</argsstring>
+        <name>Entity</name>
+        <qualifiedname>Entity::Entity</qualifiedname>
+        <briefdescription>
+<para>Construct a new <ref refid="classEntity" kindref="compound">Entity</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new <ref refid="classEntity" kindref="compound">Entity</ref>:: <ref refid="classEntity" kindref="compound">Entity</ref> object.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="35" column="5" bodyfile="/home/fizysky/Programowanie/dokumentacja/src/plik.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classEntity_1aedf3529531f60a0ceef362f9310e207e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Entity::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>Entity::print</qualifiedname>
+        <briefdescription>
+<para>funkcja pintująca </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PrInT.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="40" column="10" bodyfile="/home/fizysky/Programowanie/dokumentacja/src/plik.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa &apos;<ref refid="classEntity" kindref="compound">Entity</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="7" column="1" bodyfile="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" bodystart="8" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classEntity_1a980f368aa07ce358583982821533a54a" prot="public" virt="non-virtual"><scope>Entity</scope><name>Entity</name></member>
+      <member refid="classEntity_1aedf3529531f60a0ceef362f9310e207e" prot="public" virt="non-virtual"><scope>Entity</scope><name>print</name></member>
+      <member refid="classEntity_1aae071f833fcdfdb6983c4a5aadc7829f" prot="private" virt="non-virtual"><scope>Entity</scope><name>x</name></member>
+      <member refid="classEntity_1a3032094a99240e958512727451630e7b" prot="private" virt="non-virtual"><scope>Entity</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
