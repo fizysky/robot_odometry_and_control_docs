@@ -2,6 +2,8 @@
 
 # -- Project information
 
+import subprocess, os
+
 project = 'Robot\n odometry & control'
 copyright = '2022, Piotr'
 author = 'Piotr'
@@ -17,7 +19,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.breathe',
+    "breathe",
 ]
 
 intersphinx_mapping = {
