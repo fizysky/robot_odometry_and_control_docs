@@ -2,9 +2,6 @@
 Code description
 ****************
 
-TODO
-
-Classes
-=======
-
-TODO
+.. doxygenclass:: doxy
+   :project: doxy
+   :members:
