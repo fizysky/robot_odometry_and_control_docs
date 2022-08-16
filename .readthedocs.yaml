@@ -5,8 +5,6 @@ build:
   tools:
     python: "3.8"
     
-dependencies:
-  - breathe==2.0.0
 
 sphinx:
   fail_on_warning: true
