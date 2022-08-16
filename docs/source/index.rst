@@ -21,6 +21,7 @@ kinematics:
    :caption: Getting started
    
    para
+   lua
 
 .. toctree::
    :maxdepth: 1
