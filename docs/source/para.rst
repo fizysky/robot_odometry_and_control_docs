@@ -2,6 +2,9 @@
 ROS Integration
 ***************
 
+Requirements
+************
+
 Each wheel velocity and steer angle is publish in ros messeges of type 
 ``mobie_robots_kinematic/VelocityWheel`` and calcuation are done base on input linear and 
 angular velocity passed in ros messeges of type ``geometry_msgs/Twist``.
@@ -45,6 +48,3 @@ This package provide customized messeges that helps organize data in ros network
     * float32 LinVelocity
     * float32 AngVelocity
     * float32 steerAngle 
-
-Test
-====
