@@ -24,15 +24,15 @@ By defaul this package:
 
   * /*robot_name*/velocity
   
-    * mobie_robots_kinematic/VelocityWheel
+    * ``mobie_robots_kinematic/VelocityWheel``
   * /*robot_name*/odom 
   
-    * nav_msgs/Odometry
+    * ``nav_msgs/Odometry``
 
 Each of names can be customized in configuration file.
 
 Custom messege
-==============
+**************
 
 This package provide customized messeges that helps organize data in ros network
 
@@ -44,4 +44,7 @@ This package provide customized messeges that helps organize data in ros network
     * uint32 ID
     * float32 LinVelocity
     * float32 AngVelocity
-    * float32 steerAngle #
+    * float32 steerAngle 
+
+Test
+====
