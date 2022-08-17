@@ -356,13 +356,12 @@
         <name>calculateOdom</name>
         <qualifiedname>Robot::calculateOdom</qualifiedname>
         <briefdescription>
-<para>Base on robot velocity, calculate posion and publish odom tf and msgs. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="144" column="10" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="130" bodyend="132"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="144" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -380,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="172" column="10" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="110" bodyend="125"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="172" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -393,24 +392,12 @@
           <declname>vel</declname>
         </param>
         <briefdescription>
-<para>Function that takes real values of all wheels welocity and calculates robots&apos; velocity. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>vel</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>is a ros messeges that contains feedback information from robots motors </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
-<para>sum each wheel velocity and take average of it</para>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="173" column="10" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="138" bodyend="152"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="173" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -432,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="180" column="6" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="263" bodyend="270"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="180" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -442,7 +429,6 @@
         <qualifiedname>Robot::ReadConfig</qualifiedname>
         <param>
           <type>std::string</type>
-          <defname>plik_</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -450,7 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="181" column="6" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="281" bodyend="414"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="181" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -460,11 +446,9 @@
         <qualifiedname>Robot::readField</qualifiedname>
         <param>
           <type>lua_State *</type>
-          <defname>L</defname>
         </param>
         <param>
           <type>const char *</type>
-          <defname>s</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -472,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="182" column="6" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="271" bodyend="279"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="182" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -492,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="149" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="101" bodyend="101"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="149" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1a832271bc0b6f36d0499e81d522c6f330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -514,7 +498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="150" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="102" bodyend="102"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="150" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1abed0bb1e50445ca865fd34c743d5fe8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -532,42 +516,14 @@
         </param>
         <param>
           <type>std::string</type>
-          <defname>plik_</defname>
         </param>
         <briefdescription>
-<para>Construct a new <ref refid="classRobot" kindref="compound">Robot</ref>:: <ref refid="classRobot" kindref="compound">Robot</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>robot_name</parametername>
-</parameternamelist>
-<parameterdescription>
-<para></para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>rate_pub</parametername>
-</parameternamelist>
-<parameterdescription>
-<para></para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>plik_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para></para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="151" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="60" bodyend="94"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="151" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -581,7 +537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="152" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="100" bodyend="100"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="152" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1a924320124b09c2f2ac1621aa210d5f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -595,7 +551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="153" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="104" bodyend="106"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="153" column="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

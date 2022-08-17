@@ -55,7 +55,7 @@
     <member refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178" kind="function"><name>validate</name></member>
     <member refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989" kind="function"><name>robotVel</name></member>
     <member refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" kind="function"><name>Print</name></member>
-    <member refid="classRobot_1_1Wheel_1a3908a58678677006cbfb6f488b318a84" kind="function"><name>push_msgs</name></member>
+    <member refid="classRobot_1_1Wheel_1ac8072cc4f7de670c43e7a094ff3294d5" kind="function"><name>push_msgs</name></member>
   </compound>
   <compound refid="classRobot_1_1WheelFixed" kind="class"><name>Robot::WheelFixed</name>
     <member refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" kind="function"><name>calculate</name></member>
@@ -72,16 +72,8 @@
   </compound>
   <compound refid="Robot_8hpp" kind="file"><name>Robot.hpp</name>
   </compound>
-  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="Robot_8cpp" kind="file"><name>Robot.cpp</name>
-    <member refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kind="define"><name>PASS</name></member>
-  </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include</name>
   </compound>
   <compound refid="dir_7cf32c2c93d1e8a683166f09d201233e" kind="dir"><name>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic</name>
-  </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src</name>
   </compound>
 </doxygenindex>
