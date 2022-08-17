@@ -28,6 +28,7 @@ kinematics:
    :hidden:
 
    code
+   code2
 
 
 

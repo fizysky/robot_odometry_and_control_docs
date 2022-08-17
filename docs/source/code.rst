@@ -2,5 +2,7 @@
 Code description
 ****************
 
-.. autodoxygenfile:: Robot
+.. doxygenclass:: Robot
+   :members:
+   :outline:
    
