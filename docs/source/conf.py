@@ -48,7 +48,3 @@ epub_show_urls = 'footnote'
 
 breathe_projects = {"My Project": "../xml/"}
 breathe_default_project = "My Project"
-
-breathe_projects = {
-    "Entity": "xml/",
-}
