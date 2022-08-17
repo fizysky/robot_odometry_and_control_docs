@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classEntity_1_1Entity__local" kind="class" language="C++" prot="public">
+    <compoundname>Entity::Entity_local</compoundname>
+    <includes refid="plik_8hpp" local="no">plik.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEntity_1_1Entity__local_1a8d5951aafa353f2d37199304982f6a04" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Entity::Entity_local::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>Entity::Entity_local::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="26" column="17" bodyfile="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEntity_1_1Entity__local_1a23fdde318fb4733c416b1875334d5ce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Entity::Entity_local::foo</definition>
+        <argsstring>()</argsstring>
+        <name>foo</name>
+        <qualifiedname>Entity::Entity_local::foo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="28" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>lokalna klasa </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" line="23" column="5" bodyfile="/home/fizysky/Programowanie/dokumentacja/include/plik.hpp" bodystart="24" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classEntity_1_1Entity__local_1a23fdde318fb4733c416b1875334d5ce0" prot="public" virt="non-virtual"><scope>Entity::Entity_local</scope><name>foo</name></member>
+      <member refid="classEntity_1_1Entity__local_1a8d5951aafa353f2d37199304982f6a04" prot="private" virt="non-virtual"><scope>Entity::Entity_local</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
