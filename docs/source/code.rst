@@ -2,5 +2,5 @@
 Code description
 ****************
 
-.. doxygenclass:: Entity
+.. doxygenclass:: Robot
    :members:
