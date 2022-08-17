@@ -2,6 +2,7 @@
 Code description
 ****************
 
+.. cpp:namespace:: @ex_index
+
 .. doxygenclass:: Robot
-   :outline:
-   
+   :members:

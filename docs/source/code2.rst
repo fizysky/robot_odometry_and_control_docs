@@ -2,4 +2,3 @@
 Code2
 *****
 
-.. doxygenindex::
