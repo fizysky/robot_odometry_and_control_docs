@@ -24,9 +24,9 @@ kinematics:
    lua
 
 .. toctree::
-   :maxdepth: 1
+   :caption: Code
    :hidden:
-
+   
    code
    code2
 
