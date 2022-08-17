@@ -2,6 +2,8 @@
 
 # -- Project information
 
+import subprocess, os
+
 project = 'Robot\n odometry & control'
 copyright = '2022, Piotr'
 author = 'Piotr'
@@ -17,6 +19,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    "breathe",
 ]
 
 intersphinx_mapping = {
@@ -42,3 +45,7 @@ html_logo = "images/logoW.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+breathe_projects = {"My Project": "../xml/"}
+breathe_default_project = "My Project"
+breathe_default_members = ('members', 'undoc-members', 'private-members' , 'protected-members')

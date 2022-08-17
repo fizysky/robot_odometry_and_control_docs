@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="Robot_8cpp" kind="file" language="C++">
+    <compoundname>Robot.cpp</compoundname>
+    <includes refid="Robot_8hpp" local="yes">Robot.hpp</includes>
+    <includes local="no">ros/package.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Robot.hpp</label>
+        <link refid="Robot_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp</label>
+        <link refid="Robot_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="7">
+        <label>geometry_msgs/Twist.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>lua.hpp</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>mobie_robots_kinematic/VelocityWheel.h</label>
+      </node>
+      <node id="9">
+        <label>mobie_robots_kinematic/motor.h</label>
+      </node>
+      <node id="15">
+        <label>nav_msgs/Odometry.h</label>
+      </node>
+      <node id="17">
+        <label>ros/package.h</label>
+      </node>
+      <node id="4">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>tf/transform_broadcaster.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" prot="public" static="no">
+        <name>PASS</name>
+        <param><defname>L</defname></param>
+        <param><defname>S</defname></param>
+        <initializer>                   {ROS_ERROR(&quot;Error %s, filed: %lld&quot;, S, lua_tointeger(L, 2));\
+                   lua_pop(L, 2);\
+                   continue;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" line="259" column="9" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Robot_8hpp" kindref="compound">Robot.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/package.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>***************************************<sp/>Wheel<sp/>****************************************************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">mobie_robots_kinematic::VelocityWheel<sp/><ref refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" kindref="member">Robot::Wheel::wheels_msg</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classRobot_1_1Wheel" kindref="compound">Robot::Wheel::Wheel</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>place,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxAngVel)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" kindref="member">l_m_idWheel</ref><sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" kindref="member">l_m_radius</ref><sp/>=<sp/>radius;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kindref="member">l_m_distanceFromCentre</ref>[0]<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kindref="member">l_m_distanceFromCentre</ref>[1]<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" kindref="member">l_m_max_ang_vel</ref><sp/>=<sp/>maxAngVel;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" kindref="member">l_m_placeInMsg</ref><sp/>=<sp/>place;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a3908a58678677006cbfb6f488b318a84" kindref="member">Robot::Wheel::push_msgs</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*<sp/>T){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;Size:<sp/>%ld&quot;</highlight><highlight class="normal">,<sp/>wheels_msg.values.size());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>-&gt;<sp/><ref refid="classRobot_1a4801c8795ed10cef6db6659417b54c77" kindref="member">robot_pub</ref>.publish(wheels_msg);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>wheels_msg.values.clear();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" kindref="member">Robot::Wheel::Print</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;Print<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>l_m_idWheel);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>***************************************<sp/>Robot<sp/>****************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>Konstruktor<sp/>obiektu<sp/>robot<sp/>przyjmujący<sp/>nazwe<sp/>robota<sp/>użytą<sp/>później<sp/>jako<sp/>przestrzeń<sp/>nazw<sp/>(/robot_name/cmd_vel)</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>dla<sp/>publikowanych<sp/>oraz<sp/>subskrybowanych<sp/>topików<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>rate_pub<sp/>jest<sp/>parametrem<sp/>dla<sp/>timera<sp/>określający<sp/>z<sp/>jaką<sp/>częstotliwości<sp/>będą<sp/>publikowane</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>dane<sp/>dla<sp/>napędów<sp/>poszególnych<sp/>kół</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kindref="member">Robot::Robot</ref>(std::string<sp/>robot_name,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate_pub,<sp/>std::string<sp/>plik_)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classRobot_1aa6f74fabb3788e452280b44602230c4e" kindref="member">m_name</ref>(robot_name)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>m_wheelLog.resize(0);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>m_LogLevel<sp/>=<sp/>Normal;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>określenie<sp/>ilości<sp/>serw<sp/>w<sp/>widomości<sp/>VelocityWheel<sp/>[deprecated]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_INFO_STREAM(plik_);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ReadConfig(plik_);<sp/></highlight><highlight class="comment">//<sp/>odczytanie<sp/>parametrów<sp/>oraz<sp/>stworzenie<sp/>obiektów<sp/>kół</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG_STREAM(std::string(</highlight><highlight class="stringliteral">&quot;Spawn<sp/>Robot:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>robot_name);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>określenie<sp/>przestrzeni<sp/>nazw<sp/>dla<sp/>topików<sp/>oraz<sp/>nazw<sp/>topików<sp/>sub<sp/>oraz<sp/>pub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>topic_sub<sp/>=<sp/>robot_name<sp/>+<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;cmd_vel&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>topic_pub<sp/>=<sp/>robot_name<sp/>+<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;velocity&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>topic_wheel_sub<sp/>=<sp/>robot_name<sp/>+<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;wheel_feedback&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>odom_pub<sp/><sp/>=<sp/>robot_name<sp/>+<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;odom&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>robot_sub<sp/>=<sp/>nh_.subscribe&lt;geometry_msgs::Twist&gt;(topic_sub,<sp/>1,<sp/>&amp;<ref refid="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" kindref="member">Robot::cmdVelCallback</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>robot_sub_wheels<sp/>=<sp/>nh_.subscribe&lt;mobie_robots_kinematic::VelocityWheel&gt;(topic_wheel_sub,<sp/>1,<sp/>&amp;<ref refid="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" kindref="member">Robot::wheelVelCallback</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>robot_pub<sp/>=<sp/>nh_.advertise&lt;mobie_robots_kinematic::VelocityWheel&gt;(topic_pub,<sp/>1,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>robot_pub_odom<sp/>=<sp/>nh_.advertise&lt;nav_msgs::Odometry&gt;(odom_pub,<sp/>10);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>definicja<sp/>oraz<sp/>powołanie<sp/>timera<sp/>odpowiedzialnego<sp/>za<sp/>publikowanie<sp/>wiadomosci<sp/>dla<sp/>napędów</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>m_timer<sp/>=<sp/>nh_.createTimer(ros::Duration(rate_pub),<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ros::TimerEvent&amp;){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG_STREAM((std::string)</highlight><highlight class="stringliteral">&quot;Publish<sp/>control<sp/>for<sp/>robot:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>this-&gt;m_name);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>vec<sp/>:<sp/>this-&gt;m_wheels)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec.second<sp/>-&gt;<sp/>calculate(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Wheel::push_msgs(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>Określienie<sp/>domyślnych<sp/>wartości<sp/>obiektu<sp/>robot</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>brak<sp/>przestrzeni<sp/>nazw<sp/>dla<sp/>topików</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>publikowanie<sp/>wartości<sp/>dla<sp/>napędów<sp/>z<sp/>częstotliwością<sp/>1Hz</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kindref="member">Robot::Robot</ref>()<sp/>:<sp/><ref refid="classRobot" kindref="compound">Robot</ref>((std::string)</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;constructor:<sp/>no<sp/>arguments&quot;</highlight><highlight class="normal">);}<sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kindref="member">Robot::Robot</ref>(std::string<sp/>robot_name)<sp/>:<sp/><ref refid="classRobot" kindref="compound">Robot</ref>(robot_name,<sp/>1.0)<sp/>{ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;constructor:<sp/>string<sp/>argument&quot;</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><ref refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kindref="member">Robot::Robot</ref>(std::string<sp/>robot_name,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate_pub)<sp/>:<sp/><ref refid="classRobot" kindref="compound">Robot</ref>(robot_name,<sp/>rate_pub,<sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">){ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;constructor<sp/>arguments:<sp/>string<sp/>rate<sp/>&quot;</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><ref refid="classRobot_1a924320124b09c2f2ac1621aa210d5f38" kindref="member">Robot::~Robot</ref>(){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>(std::string(</highlight><highlight class="stringliteral">&quot;Robot<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>this-&gt;<ref refid="classRobot_1aa6f74fabb3788e452280b44602230c4e" kindref="member">m_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;<sp/>destroyed&quot;</highlight><highlight class="normal">))<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" kindref="member">Robot::cmdVelCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::Twist::ConstPtr&amp;<sp/>cmd){</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>velL(cmd-&gt;linear.x,<sp/>cmd-&gt;linear.y,<sp/>0);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>velA(0,<sp/>0,<sp/>cmd-&gt;angular.z);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cmd-&gt;angular.z)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" kindref="member">m_turnRadius</ref><sp/>=<sp/><sp/>velA.cross(velL);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" kindref="member">m_turnRadius</ref><sp/>=<sp/>Eigen::Vector3d(0,0,0);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>v<sp/>:<sp/><ref refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kindref="member">m_wheels</ref>)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>v.second<sp/>-&gt;<sp/>validate(<ref refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" kindref="member">m_turnRadius</ref>,<sp/>cmd-&gt;angular.z,<sp/>cmd-&gt;linear.x,<sp/>cmd-&gt;linear.y))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[0]<sp/>=<sp/>cmd<sp/>-&gt;<sp/>linear.x;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[1]<sp/>=<sp/>cmd<sp/>-&gt;<sp/>linear.y;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[2]<sp/>=<sp/>cmd<sp/>-&gt;<sp/>angular.z;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;cmdCallback&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a11a630c1c38858fa041e79769f5dad30" kindref="member">Robot::calculateOdom</ref>(){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" kindref="member">Robot::wheelVelCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mobie_robots_kinematic::VelocityWheel::ConstPtr&amp;<sp/>vel){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/>std::array&lt;double,<sp/>3&gt;<sp/>robotVelocity<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w<sp/>:<sp/>vel-&gt;values)<sp/><ref refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kindref="member">m_wheels</ref>[w.ID]<sp/>-&gt;<sp/>robotVel(w.LinVelocity,<sp/>robotVelocity);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;_________________________________%f&quot;</highlight><highlight class="normal">,<sp/>robotVelocity[0]);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><ref refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" kindref="member">m_odom_vel</ref>[0]<sp/>=<sp/>robotVelocity[0];<sp/></highlight><highlight class="comment">//<sp/>lin<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><ref refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" kindref="member">m_odom_vel</ref>[1]<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>lin<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><ref refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" kindref="member">m_odom_vel</ref>[2]<sp/>=<sp/>robotVelocity[2];<sp/></highlight><highlight class="comment">//<sp/>ang<sp/>z</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/>***************************************<sp/>WheelFixed<sp/>*************************************************</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><ref refid="classRobot_1_1WheelFixed" kindref="compound">Robot::WheelFixed::WheelFixed</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>place,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxAngVel)<sp/>:<sp/>Wheel(id,<sp/>place,<sp/>radius,<sp/>x,<sp/>y,<sp/>maxAngVel)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;Konstruktor<sp/>WheelFixed<sp/>%ld&quot;</highlight><highlight class="normal">,<sp/>wheels_msg.values.size());</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>l_m_max_lin_vel<sp/>=<sp/>maxAngVel*radius;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;***********<sp/>%f&quot;</highlight><highlight class="normal">,<sp/>l_m_max_lin_vel);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" kindref="member">Robot::WheelFixed::calculate</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*<sp/>T)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dane<sp/>wymagane<sp/>do<sp/>obliczeń</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>from_centre(0,<sp/><ref refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kindref="member">l_m_distanceFromCentre</ref>[1],<sp/>0);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>angular_vel(0,0,<sp/>T-&gt;<ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[2]);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>linear_vel(T-&gt;<ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[0],<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wyznaczenie<sp/>prędkości<sp/>koła</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>vel<sp/>=<sp/>angular_vel.cross(from_centre)<sp/>+<sp/>linear_vel;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref>[0]<sp/>=<sp/>vel[0];</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref>[1]<sp/>=<sp/>vel[0]<sp/>/<sp/><ref refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" kindref="member">l_m_radius</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/***</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>zamiast<sp/>Eigen::Vector3d<sp/>vel<sp/>=<sp/>angular_vel.cross(from_centre)<sp/>+<sp/>linear_vel;</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>dać<sp/><sp/><sp/><sp/><sp/>float<sp/>vel<sp/>=<sp/>-(T-&gt;m_velocity[2]*T-&gt;l_m_distanceFromCentre[1])<sp/>+<sp/>T-&gt;m_velocity[0]</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_m_velocity[0]<sp/>=<sp/>-(T-&gt;m_velocity[2]*T-&gt;l_m_distanceFromCentre[1])<sp/>+<sp/>T-&gt;m_velocity[0]<sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/><sp/><sp/><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>construc<sp/>messege</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>mobie_robots_kinematic::motor<sp/>msg;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.ID<sp/>=<sp/><ref refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" kindref="member">l_m_idWheel</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.LinVelocity<sp/>=<sp/>vel[0];</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.AngVelocity<sp/>=<sp/><ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref>[1];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.steerAngle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" kindref="member">wheels_msg</ref>.values.emplace_back(msg);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref>[1]<sp/>&gt;<sp/><ref refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" kindref="member">l_m_max_ang_vel</ref>)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_WARN(</highlight><highlight class="stringliteral">&quot;Hit<sp/>velocity<sp/>limit<sp/>id:<sp/>%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" kindref="member">l_m_idWheel</ref>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>-&gt;<sp/><ref refid="classRobot_1aea9cebb343d9a015111351d9fcf173ee" kindref="member">m_wheelLog</ref>[<ref refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" kindref="member">l_m_placeInMsg</ref>]<sp/>=<sp/><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca1101fdce733cf563ddc6fb12e6a73385" kindref="member">Warning</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" kindref="member">Robot::WheelFixed::validate</ref>(Eigen::Vector3d&amp;<sp/>vec,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(abs(vec[1])<sp/>+<sp/>abs(l_m_distanceFromCentre[1])<sp/>)<sp/>*<sp/>abs(omega)<sp/>+<sp/>abs(vx)<sp/>&gt;<sp/>l_m_max_lin_vel;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" kindref="member">Robot::WheelFixed::robotVel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>linVel,<sp/>std::array&lt;double,3&gt;&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>f[0]<sp/>+=<sp/>linVel;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>f[1]<sp/>+=<sp/>-(l_m_distanceFromCentre[1]<sp/>*<sp/>linVel)<sp/>/<sp/>pow(l_m_distanceFromCentre[1],<sp/>2);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>Print();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*<sp/>***************************************<sp/>WheelSteer<sp/>***********************************************</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="215"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><ref refid="classRobot_1_1WheelSteer" kindref="compound">Robot::WheelSteer::WheelSteer</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>place,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxAngVel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minSterAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxSterAngle)<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Wheel(id,<sp/>place,<sp/>radius,<sp/>x,<sp/>y,<sp/>maxAngVel),<sp/>l_m_steerAngle({0,<sp/>minSterAngle,<sp/>maxSterAngle})</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;Konstruktor<sp/>WheelSteer<sp/>%ld&quot;</highlight><highlight class="normal">,<sp/>wheels_msg.values.size());</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>l_m_max_lin_vel<sp/>=<sp/>maxAngVel*radius;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;***********<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>l_m_idWheel);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" kindref="member">Robot::WheelSteer::calculate</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*<sp/>T){</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>cmd_lin_vel(T-&gt;<ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[0],<sp/>T-&gt;<ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[1],<sp/>0);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>cmd_ang_vel(0,<sp/>0,<sp/>T-&gt;<ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref>[2]);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>wheel_1(<ref refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kindref="member">l_m_distanceFromCentre</ref>[0],<sp/><ref refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kindref="member">l_m_distanceFromCentre</ref>[1],<sp/>0);</highlight><highlight class="comment">//<sp/>wektor<sp/>położenia<sp/>koła<sp/>względem<sp/>środka<sp/>robota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/>vel_wheel_1<sp/>=<sp/>cmd_ang_vel.cross(wheel_1);<sp/></highlight><highlight class="comment">//<sp/>wektor<sp/>prędkości<sp/>koła<sp/>dla<sp/>ruchu<sp/>obrotowego:<sp/>v<sp/>=<sp/>omega<sp/>x<sp/>r</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>vel_wheel_1<sp/>=<sp/>vel_wheel_1<sp/>+<sp/>cmd_lin_vel;</highlight><highlight class="comment">//<sp/>złożenie<sp/>prędkości</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" kindref="member">l_m_steerAngle</ref>[0]<sp/>=<sp/>atan2(vel_wheel_1[1],<sp/>vel_wheel_1[0]);</highlight><highlight class="comment">//<sp/>sterring<sp/>angle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>l_m_steerAngle[0]<sp/>&lt;<sp/>l_m_steerAngle[2]<sp/>?<sp/>:<sp/>l_m_steerAngle[0]<sp/>-=<sp/>M_PI;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>l_m_steerAngle[0]<sp/>&gt;<sp/>l_m_steerAngle[1]<sp/>?<sp/>:<sp/>l_m_steerAngle[0]<sp/>+=<sp/>M_PI;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref>[1]<sp/>=<sp/>vel_wheel_1.norm()<sp/>/<sp/><ref refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" kindref="member">l_m_radius</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">//<sp/>construc<sp/>messege</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>mobie_robots_kinematic::motor<sp/>msg;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.ID<sp/>=<sp/><ref refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" kindref="member">l_m_idWheel</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.LinVelocity<sp/>=<sp/>vel_wheel_1.norm();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.AngVelocity<sp/>=<sp/><ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref>[1];</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.steerAngle<sp/>=<sp/><ref refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" kindref="member">l_m_steerAngle</ref>[0]<sp/>*<sp/>(180/M_PI);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" kindref="member">wheels_msg</ref>.values.emplace_back(msg);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" kindref="member">Robot::WheelSteer::robotVel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>linVel,<sp/>std::array&lt;double,3&gt;&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>*<sp/>***************************************<sp/><sp/><sp/>lua<sp/><sp/><sp/>**************************************************</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>*<sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="258"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PASS(L,<sp/>S)<sp/>{ROS_ERROR(&quot;Error<sp/>%s,<sp/>filed:<sp/>%lld&quot;</highlight><highlight class="normal">,<sp/>S,<sp/>lua_tointeger(L,<sp/>2));\</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_pop(L,<sp/>2);\</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continue;}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" kindref="member">Robot::CheckLua</ref>(lua_State*<sp/>L,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r){</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r<sp/>!=<sp/>LUA_OK){</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>errormsg<sp/>=<sp/>lua_tostring(L,<sp/>-1);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>errormsg<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">Robot::readField</ref>(lua_State*<sp/>L,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;odczyt<sp/>pola<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>lua_pop(L,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>na<sp/>stosie<sp/>jest<sp/>pole<sp/>tablicy<sp/>wheels<sp/>będoące<sp/>tablicą</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>lua_pushstring(L,<sp/>s);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>lua_gettable(L,<sp/>-2);<sp/></highlight><highlight class="comment">//<sp/>na<sp/>stosie<sp/>jest<sp/>wartość<sp/>pola<sp/>id</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lua_isnumber(L,<sp/>-1);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" kindref="member">Robot::ReadConfig</ref>(std::string<sp/>plik_){</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kindref="member">m_wheelNumber</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>lua_State*<sp/>lua<sp/>=<sp/>luaL_newstate();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>scierzka<sp/>do<sp/>pliku<sp/>konfiguracyjnego</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>file<sp/>=<sp/>ros::package::getPath(</highlight><highlight class="stringliteral">&quot;mobie_robots_kinematic&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>=<sp/>file<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/config/&quot;</highlight><highlight class="normal"><sp/>+<sp/>plik_+</highlight><highlight class="stringliteral">&quot;.lua&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path<sp/>=<sp/>file.c_str();</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" kindref="member">CheckLua</ref>(lua,<sp/>luaL_dofile(lua,<sp/>path))){</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_getglobal(lua,<sp/></highlight><highlight class="stringliteral">&quot;wheels&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_pushnil(lua);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>dif_s<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Fixed&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>ster_s<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Steer&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">strucSingleWheel</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxAngVel;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxSterAng;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minSterAng;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>TWheel;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>strucSingleWheel<sp/>&gt;<sp/>dif_vec;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(lua_next(lua,<sp/>1)){<sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;*****<sp/>pole<sp/>tablicy<sp/>*****&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_pushstring(lua,<sp/></highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>rzucenie<sp/>na<sp/>stos<sp/>kulucza<sp/>id,<sp/>teraz<sp/>id<sp/>jest<sp/>na<sp/>wieszchu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_gettable(lua,<sp/>-2);<sp/></highlight><highlight class="comment">//<sp/>odczyt<sp/>z<sp/>tabeli,<sp/>znajdującej<sp/>się<sp/>na<sp/>drugim<sp/>miejscu<sp/>od<sp/>góry,<sp/>pola<sp/>o<sp/>indeksie<sp/>id</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lua_isnil(lua,<sp/>-1))<sp/>{<sp/></highlight><highlight class="comment">//<sp/>jeżeli<sp/>nie<sp/>ma<sp/>takiego<sp/>pola<sp/>lub<sp/>wartość<sp/>jest<sp/>pusta<sp/>to<sp/>cała<sp/>tabela<sp/>jest<sp/>pomijana</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_pop(lua,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>usunięcie<sp/>ze<sp/>stosu<sp/>wartości<sp/>nil<sp/>oraz<sp/>leżącej<sp/>podspodem<sp/>tabeli<sp/>z<sp/>brakującym<sp/>polem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lua_isstring(lua,<sp/>-1))</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;type<sp/>is<sp/>string&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((std::string)lua_tostring(lua,<sp/>-1)<sp/>==<sp/>dif_s<sp/>)<sp/><sp/></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;type<sp/>is<sp/>dif&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>na<sp/>stosie<sp/>jest<sp/>typ<sp/>&quot;Dif&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.id<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;radius&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.radius<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;radius&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.x<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.y<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;maxAngVel&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.maxAngVel<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;maxAngVel&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;Push<sp/>wheel<sp/>struc<sp/>to<sp/>vector&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_vec.push_back(TWheel);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//base.emplace_back(std::make_unique&lt;WheelFixed&gt;(TWheel.id,<sp/>m_wheelNumber,<sp/>TWheel.radius,<sp/>TWheel.x,<sp/>TWheel.y,<sp/>TWheel.maxAngVel));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kindref="member">m_wheels</ref>.insert(std::pair&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>std::unique_ptr&lt;WheelFixed&gt;&gt;(TWheel.id,<sp/>std::make_unique&lt;WheelFixed&gt;(TWheel.id,<sp/><ref refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kindref="member">m_wheelNumber</ref>,<sp/>TWheel.radius,<sp/>TWheel.x,<sp/>TWheel.y,<sp/>TWheel.maxAngVel)));</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((std::string)lua_tostring(lua,<sp/>-1)<sp/>==<sp/>ster_s)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;type<sp/>is<sp/>ster&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.id<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;radius&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.radius<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;radius&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.x<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.y<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;maxAngVel&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.maxAngVel<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;maxAngVel&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;minSterAng&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.minSterAng<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;minSterAng&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;maxSterAng&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TWheel.maxSterAng<sp/>=<sp/>(float)lua_tonumber(lua,<sp/>-1);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;maxSterAng&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_DEBUG(</highlight><highlight class="stringliteral">&quot;Push<sp/>wheel<sp/>struc<sp/>to<sp/>vector&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_vec.push_back(TWheel);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//base.emplace_back(std::make_unique&lt;WheelSteer&gt;(TWheel.id,<sp/>m_wheelNumber,<sp/>TWheel.radius,<sp/>TWheel.x,<sp/>TWheel.y,<sp/>TWheel.maxAngVel,<sp/>TWheel.minSterAng,<sp/>TWheel.maxSterAng));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kindref="member">m_wheels</ref>.insert(std::pair&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>std::unique_ptr&lt;WheelSteer&gt;&gt;(TWheel.id,<sp/>std::make_unique&lt;WheelSteer&gt;(TWheel.id,<sp/><ref refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kindref="member">m_wheelNumber</ref>,<sp/>TWheel.radius,<sp/>TWheel.x,<sp/>TWheel.y,<sp/>TWheel.maxAngVel,<sp/>TWheel.minSterAng,<sp/>TWheel.maxSterAng)));</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kindref="member">PASS</ref>(lua,<sp/></highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>if<sp/>lua_isstring(lua,<sp/>-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_ERROR(</highlight><highlight class="stringliteral">&quot;pole<sp/>\&quot;type\&quot;<sp/>nie<sp/>jest<sp/>nie<sp/>jest<sp/>typu<sp/>string&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_pop(lua,<sp/>2);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lua_pop(lua,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>usunięcie<sp/>ze<sp/>stosu<sp/>wartości<sp/>oraz<sp/>pola<sp/>głównej<sp/>tabeli,<sp/>na<sp/>stosie<sp/>pozostaje<sp/>klucz<sp/>do<sp/>głównej<sp/>tablicy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1aea9cebb343d9a015111351d9fcf173ee" kindref="member">m_wheelLog</ref>.emplace_back(<ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca18696c19a75c89f161a342f0070de60a" kindref="member">Normal</ref>);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kindref="member">m_wheelNumber</ref>++;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/><sp/>while(lua_next(lua,<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wheels<sp/>number:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/><ref refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kindref="member">m_wheelNumber</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/>lua_close(lua);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,9 +1,7 @@
-Code description
-************
+****************
+Code Overview
+****************
 
-TODO
 
-Classes
-=======
-
-TODO
+.. doxygenclass:: Robot
+   :outline:

@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="Robot_8hpp" kind="file" language="C++">
+    <compoundname>Robot.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">ros/ros.h</includes>
+    <includes local="no">array</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">geometry_msgs/Twist.h</includes>
+    <includes local="yes">mobie_robots_kinematic/VelocityWheel.h</includes>
+    <includes local="yes">mobie_robots_kinematic/motor.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">map</includes>
+    <includes local="no">lua.hpp</includes>
+    <includes local="no">Eigen/Dense</includes>
+    <includes local="no">nav_msgs/Odometry.h</includes>
+    <includes local="no">tf/transform_broadcaster.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp</label>
+        <link refid="Robot_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="4">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>geometry_msgs/Twist.h</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>lua.hpp</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>mobie_robots_kinematic/VelocityWheel.h</label>
+      </node>
+      <node id="8">
+        <label>mobie_robots_kinematic/motor.h</label>
+      </node>
+      <node id="14">
+        <label>nav_msgs/Odometry.h</label>
+      </node>
+      <node id="3">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>tf/transform_broadcaster.h</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classRobot" prot="public">Robot</innerclass>
+    <innerclass refid="classRobot_1_1Wheel" prot="protected">Robot::Wheel</innerclass>
+    <innerclass refid="classRobot_1_1WheelFixed" prot="protected">Robot::WheelFixed</innerclass>
+    <innerclass refid="classRobot_1_1WheelSteer" prot="protected">Robot::WheelSteer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/ros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/Twist.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mobie_robots_kinematic/VelocityWheel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mobie_robots_kinematic/motor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lua.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nav_msgs/Odometry.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf/transform_broadcaster.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>klasa<sp/>zawierająca<sp/>dane<sp/>dotyczące<sp/>robota<sp/>takie<sp/>jak:</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/>satan:<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>ilość<sp/>kół<sp/>oraz<sp/>obiekty<sp/>poszegółnych<sp/>typów<sp/>kół</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>źródło<sp/>sterowania:<sp/>wewnetrzy<sp/>sub<sp/>z<sp/>joystic&apos;a<sp/>albo<sp/>z<sp/>kalwiatury<sp/>lub<sp/>zewnętrzy<sp/>topic<sp/>/cmd_vel</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>flaga<sp/>stanu<sp/>świadcząco<sp/>o<sp/>przekroczenu<sp/>dopuszczalnych<sp/>parametów<sp/>wynikających<sp/>z<sp/>modelu<sp/>robota</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ustawiana<sp/>za<sp/>pośrednictwem<sp/>metody<sp/>odpowiedzialnej<sp/>za<sp/>kontrolowanie<sp/>zachowania<sp/>robota</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lub<sp/>obieku<sp/>koła<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>kontrola:<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heading</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>^<sp/>x</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||2</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||-|#######|-||<sp/><sp/><sp/><sp/><sp/><sp/>--</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>|#######|<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/>L</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|#######|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/>&lt;-<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|###C###|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|#######|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>|#######|<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/>HT</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||-|#######|-||<sp/><sp/><sp/><sp/><sp/><sp/>--</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||4</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>WIDTH<sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classRobot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRobot" kindref="compound">Robot</ref><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classRobot_1aa6f74fabb3788e452280b44602230c4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classRobot_1aa6f74fabb3788e452280b44602230c4e" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classRobot_1a793aef62fd1fdf6b2415b970f5b3a3d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Timer<sp/><ref refid="classRobot_1a793aef62fd1fdf6b2415b970f5b3a3d0" kindref="member">m_timer</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" kindref="member">Level</ref>{</highlight></codeline>
+<codeline lineno="58" refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca18696c19a75c89f161a342f0070de60a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca18696c19a75c89f161a342f0070de60a" kindref="member">Normal</ref>,<sp/><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca1101fdce733cf563ddc6fb12e6a73385" kindref="member">Warning</ref>,<sp/><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca68b0442ca02bcf158dbb0c21d36cef30" kindref="member">Error</ref></highlight></codeline>
+<codeline lineno="59" refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca68b0442ca02bcf158dbb0c21d36cef30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60" refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" kindref="member">Command</ref>{</highlight></codeline>
+<codeline lineno="61" refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9ca42bd8d665d1839733e4c8713f2fe578d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9ca42bd8d665d1839733e4c8713f2fe578d" kindref="member">Joystic</ref>,<sp/><ref refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9caada289166b318af3775f20e8b3d9d050" kindref="member">Keyboard</ref>,<sp/><ref refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9cac2aec1f5421b3d7ee0ed7713c9f49417" kindref="member">cmd_vel</ref></highlight></codeline>
+<codeline lineno="62" refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9cac2aec1f5421b3d7ee0ed7713c9f49417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65" refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/><ref refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" kindref="member">m_turnRadius</ref>;<sp/></highlight><highlight class="comment">//<sp/><sp/>@TODO<sp/>mierzony<sp/>od<sp/>środka<sp/>bazy<sp/>robota<sp/>(x,<sp/>y,<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classRobot_1af4a2612d1b372f84121f3c8d9cbc0a7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" kindref="member">Level</ref><sp/><ref refid="classRobot_1af4a2612d1b372f84121f3c8d9cbc0a7d" kindref="member">m_LogLevel</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classRobot_1aea9cebb343d9a015111351d9fcf173ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Level&gt;<sp/><ref refid="classRobot_1aea9cebb343d9a015111351d9fcf173ee" kindref="member">m_wheelLog</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classRobot_1afdfff60f94cd5509a31d5fc5140db7d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" kindref="member">Command</ref><sp/><ref refid="classRobot_1afdfff60f94cd5509a31d5fc5140db7d9" kindref="member">m_source</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kindref="member">m_wheelNumber</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>3&gt;<sp/><ref refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kindref="member">m_velocity</ref><sp/>=<sp/>{0};<sp/><sp/></highlight><highlight class="comment">//<sp/>lin_x,<sp/>lin_y,<sp/>ang_z<sp/>|<sp/>wartości<sp/>zadane</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>3&gt;<sp/><ref refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" kindref="member">m_odom_vel</ref><sp/>=<sp/>{0};<sp/><sp/></highlight><highlight class="comment">//<sp/>lin_x,<sp/>lin_y,<sp/>ang_z<sp/>|<sp/>wartości<sp/>obilliczon<sp/>na<sp/>podstawie<sp/>rzeczywistej<sp/>prękości<sp/>kół</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classRobot_1aa2acd1a99802e973eb1083822cc5ba8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>3&gt;<sp/><ref refid="classRobot_1aa2acd1a99802e973eb1083822cc5ba8b" kindref="member">m_odom_pose</ref><sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">//<sp/>lin_x,<sp/>lin_y,<sp/>ang_z<sp/>|<sp/>wartości<sp/>obilliczon<sp/>na<sp/>podstawie<sp/>rzeczywistej<sp/>prękości<sp/>kół</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>********************************************************<sp/>rodzaje<sp/>kół<sp/>********</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>podstawowe<sp/>dane<sp/>koła</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classRobot_1_1Wheel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRobot_1_1Wheel" kindref="compound">Wheel</ref>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87" refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>mobie_robots_kinematic::VelocityWheel<sp/><ref refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" kindref="member">wheels_msg</ref>;<sp/></highlight><highlight class="comment">//<sp/>wiadmość<sp/>zawierająca<sp/>wiadomości<sp/>wszystkich<sp/>kół</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" kindref="member">l_m_idWheel</ref>;</highlight></codeline>
+<codeline lineno="89" refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" kindref="member">l_m_radius</ref>;</highlight></codeline>
+<codeline lineno="90" refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" kindref="member">l_m_max_ang_vel</ref>;</highlight></codeline>
+<codeline lineno="91" refid="classRobot_1_1Wheel_1ad90d681a9f5e054e1247ecbf6684bed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1ad90d681a9f5e054e1247ecbf6684bed6" kindref="member">l_m_max_lin_vel</ref>;</highlight></codeline>
+<codeline lineno="92" refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" kindref="member">l_m_placeInMsg</ref>;</highlight></codeline>
+<codeline lineno="93" refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;float,<sp/>2&gt;<sp/><ref refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kindref="member">l_m_distanceFromCentre</ref>;<sp/></highlight><highlight class="comment">//<sp/>x,<sp/>y<sp/>względem<sp/>ukłądu<sp/>bazy<sp/>robota<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;float,<sp/>2&gt;<sp/><ref refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kindref="member">l_m_velocity</ref><sp/>=<sp/>{0};<sp/><sp/></highlight><highlight class="comment">//<sp/>predkość<sp/>liniowa<sp/>środka<sp/>koła<sp/>oraz<sp/>prędkość<sp/>obrotowa<sp/>(v,<sp/>omega)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96" refid="classRobot_1_1Wheel_1a7c321d6c4dd9387a27943a743c081d98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1a7c321d6c4dd9387a27943a743c081d98" kindref="member">Wheel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97" refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" kindref="member">Wheel</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98" refid="classRobot_1_1Wheel_1a96e74ff5e91d6adf0007a633517eb687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a96e74ff5e91d6adf0007a633517eb687" kindref="member">calculate</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*<sp/>ws)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>uzupełnienie<sp/>vektora<sp/>wheels_msg,<sp/>położenie<sp/>zależne<sp/>od<sp/>kolejności<sp/>wczytania<sp/>z<sp/>lua</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178" kindref="member">validate</ref>(Eigen::Vector3d&amp;,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>przyjmuje<sp/>promień<sp/>skrętu<sp/>robota,<sp/>angVel<sp/>oraz<sp/>linVel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989" kindref="member">robotVel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>std::array&lt;double,3&gt;&amp;<sp/>f)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>przyjmuje<sp/>prędkość<sp/>liniową<sp/>koła<sp/>i<sp/>zwraca<sp/>prędkość(lin&amp;ang)<sp/>robota<sp/>powodowaną<sp/>przez<sp/>dane<sp/>koło<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classRobot_1_1Wheel_1ac8072cc4f7de670c43e7a094ff3294d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1ac8072cc4f7de670c43e7a094ff3294d5" kindref="member">push_msgs</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*);<sp/></highlight><highlight class="comment">//<sp/>publikowanie<sp/>wiadomości<sp/>wheels_msg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" kindref="member">Print</ref>();<sp/></highlight><highlight class="comment">//<sp/>@@@<sp/>do<sp/>testów</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>obliczanie<sp/>prędkości<sp/>liniowej,<sp/>kontowej,<sp/>oraz<sp/>kątu<sp/>sterowania</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*******************************<sp/>Zwykłe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classRobot_1_1WheelFixed" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRobot_1_1WheelFixed" kindref="compound">WheelFixed</ref><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel" kindref="compound">Wheel</ref>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="109" refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" kindref="member">calculate</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*<sp/>ws)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110" refid="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" kindref="member">validate</ref>(Eigen::Vector3d&amp;,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111" refid="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" kindref="member">WheelFixed</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112" refid="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" kindref="member">robotVel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>std::array&lt;double,3&gt;&amp;<sp/>f)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>};<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*******************************<sp/>Skrętne</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classRobot_1_1WheelSteer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRobot_1_1WheelSteer" kindref="compound">WheelSteer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1Wheel" kindref="compound">Wheel</ref>{</highlight></codeline>
+<codeline lineno="118" refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;float,3&gt;<sp/><ref refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" kindref="member">l_m_steerAngle</ref>;<sp/></highlight><highlight class="comment">//<sp/>kąt<sp/>względem<sp/>osi<sp/>x<sp/>robota<sp/>(obliczony,<sp/>min_możliwy,<sp/>max_możliwy)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120" refid="classRobot_1_1WheelSteer_1ad434ceb3a7321a432b7c05ea912f225d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classRobot_1_1WheelSteer_1ad434ceb3a7321a432b7c05ea912f225d" kindref="member">WheelSteer</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121" refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" kindref="member">calculate</ref>(<ref refid="classRobot" kindref="compound">Robot</ref>*)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122" refid="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" kindref="member">validate</ref>(Eigen::Vector3d&amp;,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="123" refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" kindref="member">robotVel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>std::array&lt;double,3&gt;&amp;<sp/>f)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>};<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*******************************<sp/>Mecanum<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>class<sp/>WheelMech<sp/><sp/>:<sp/>public<sp/>Wheel{</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>calculate(int)<sp/>override;</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/>};<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="136"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139" refid="classRobot_1a894ed752c357327911cd37b030f5c22b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a894ed752c357327911cd37b030f5c22b" kindref="member">Control</ref>();<sp/></highlight><highlight class="comment">//<sp/>set<sp/>robot&apos;<sp/>velocity<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classRobot_1aacc9bb8db131709da34a7ad8fe8872a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classRobot_1aacc9bb8db131709da34a7ad8fe8872a3" kindref="member">GetLogLevel</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classRobot_1af4a2612d1b372f84121f3c8d9cbc0a7d" kindref="member">m_LogLevel</ref>;<sp/>};<sp/></highlight><highlight class="comment">//<sp/>informacja<sp/>o<sp/>stanie<sp/>robota<sp/>oraz<sp/>jego<sp/>napędu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classRobot_1a11a630c1c38858fa041e79769f5dad30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a11a630c1c38858fa041e79769f5dad30" kindref="member">calculateOdom</ref>();<sp/></highlight><highlight class="comment">//<sp/>obliczenie<sp/>połóżenia<sp/>robota<sp/>na<sp/>podstawie<sp/>rzecczywisych<sp/>prędkości<sp/>kół</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="144" refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>std::unique_ptr&lt;Wheel&gt;<sp/>&gt;<sp/><ref refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kindref="member">m_wheels</ref>;</highlight><highlight class="comment">//<sp/>przechowuje<sp/>koła</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146" refid="classRobot_1ae081c54c3268d6f7c4e9acce56a7f2c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1ae081c54c3268d6f7c4e9acce56a7f2c8" kindref="member">Robot</ref>(std::string<sp/>robot_name);</highlight></codeline>
+<codeline lineno="147" refid="classRobot_1a832271bc0b6f36d0499e81d522c6f330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a832271bc0b6f36d0499e81d522c6f330" kindref="member">Robot</ref>(std::string<sp/>robot_name,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate_pub);</highlight></codeline>
+<codeline lineno="148" refid="classRobot_1abed0bb1e50445ca865fd34c743d5fe8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1abed0bb1e50445ca865fd34c743d5fe8c" kindref="member">Robot</ref>(std::string<sp/>robot_name,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate_pub,<sp/>std::string);</highlight></codeline>
+<codeline lineno="149" refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kindref="member">Robot</ref>();</highlight></codeline>
+<codeline lineno="150" refid="classRobot_1a924320124b09c2f2ac1621aa210d5f38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRobot_1a924320124b09c2f2ac1621aa210d5f38" kindref="member">~Robot</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*<sp/>******************</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/>****<sp/>ROS<sp/>part<sp/>****</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>******************</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159" refid="classRobot_1ac265eca4ef02f0f0c25c1129199fc609" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/><ref refid="classRobot_1ac265eca4ef02f0f0c25c1129199fc609" kindref="member">nh_</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="classRobot_1a0ba005e2d1f26d578003a463af530a20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>tf::TransformBroadcaster<sp/><ref refid="classRobot_1a0ba005e2d1f26d578003a463af530a20" kindref="member">odom_broadcaster</ref>;<sp/></highlight><highlight class="comment">//<sp/>tf<sp/>odom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classRobot_1ae1fe014ca219829358ad3fae62331bac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/><ref refid="classRobot_1ae1fe014ca219829358ad3fae62331bac" kindref="member">robot_sub</ref>;<sp/></highlight><highlight class="comment">//<sp/>prędkość<sp/>robota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classRobot_1ac36de5591e93c22ef5167afe4a77c59d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/><ref refid="classRobot_1ac36de5591e93c22ef5167afe4a77c59d" kindref="member">robot_sub_wheels</ref>;<sp/></highlight><highlight class="comment">//<sp/>informaca<sp/>zwrotna<sp/>od<sp/>kół<sp/>-<sp/>ich<sp/>prędkość<sp/>i<sp/>kąt<sp/>wysterowania</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classRobot_1a4801c8795ed10cef6db6659417b54c77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classRobot_1a4801c8795ed10cef6db6659417b54c77" kindref="member">robot_pub</ref>;<sp/></highlight><highlight class="comment">//<sp/>dane<sp/>dla<sp/>poszczegółnych<sp/>kół</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classRobot_1a83911d8ba4d46d52edd0a8ecbb093eb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classRobot_1a83911d8ba4d46d52edd0a8ecbb093eb0" kindref="member">robot_pub_odom</ref>;<sp/></highlight><highlight class="comment">//<sp/>rzeczywista<sp/>prędkość<sp/>i<sp/>połóżenie<sp/>robota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" kindref="member">cmdVelCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::Twist::ConstPtr&amp;<sp/>cmd);<sp/></highlight><highlight class="comment">//<sp/>prędkość<sp/>robota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" kindref="member">wheelVelCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mobie_robots_kinematic::VelocityWheel::ConstPtr&amp;<sp/>vel);<sp/></highlight><highlight class="comment">//<sp/>informaca<sp/>zwotna<sp/>o<sp/>rzeczywistej<sp/>prędkości<sp/>kół<sp/>-&gt;<sp/>obiczenie<sp/>prędkości<sp/>całego<sp/>robota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/>******************</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*<sp/>****<sp/>lua<sp/>part<sp/>****</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/>******************</highlight></codeline>
+<codeline lineno="176"><highlight class="comment">***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" kindref="member">CheckLua</ref>(lua_State*<sp/>L,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r);</highlight></codeline>
+<codeline lineno="178" refid="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" kindref="member">ReadConfig</ref>(std::string);</highlight></codeline>
+<codeline lineno="179" refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kindref="member">readField</ref>(lua_State*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp"/>
+  </compounddef>
+</doxygen>

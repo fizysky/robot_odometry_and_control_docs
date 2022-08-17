@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classRobot_1_1WheelFixed" kind="class" language="C++" prot="protected">
+    <compoundname>Robot::WheelFixed</compoundname>
+    <basecompoundref refid="classRobot_1_1Wheel" prot="public" virt="non-virtual">Robot::Wheel</basecompoundref>
+    <includes refid="Robot_8hpp" local="no">Robot.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Robot::WheelFixed::calculate</definition>
+        <argsstring>(Robot *ws) override</argsstring>
+        <name>calculate</name>
+        <qualifiedname>Robot::WheelFixed::calculate</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1a96e74ff5e91d6adf0007a633517eb687">calculate</reimplements>
+        <param>
+          <type><ref refid="classRobot" kindref="compound">Robot</ref> *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="109" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Robot::WheelFixed::validate</definition>
+        <argsstring>(Eigen::Vector3d &amp;, float omega, float v, float vy) override</argsstring>
+        <name>validate</name>
+        <qualifiedname>Robot::WheelFixed::validate</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178">validate</reimplements>
+        <param>
+          <type>Eigen::Vector3d &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="110" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::WheelFixed::WheelFixed</definition>
+        <argsstring>(char, char, float, float, float, float)</argsstring>
+        <name>WheelFixed</name>
+        <qualifiedname>Robot::WheelFixed::WheelFixed</qualifiedname>
+        <param>
+          <type>char</type>
+        </param>
+        <param>
+          <type>char</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="111" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Robot::WheelFixed::robotVel</definition>
+        <argsstring>(double, std::array&lt; double, 3 &gt; &amp;f) override</argsstring>
+        <name>robotVel</name>
+        <qualifiedname>Robot::WheelFixed::robotVel</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989">robotVel</reimplements>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>std::array&lt; double, 3 &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="112" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Robot::Wheel</label>
+        <link refid="classRobot_1_1Wheel"/>
+      </node>
+      <node id="1">
+        <label>Robot::WheelFixed</label>
+        <link refid="classRobot_1_1WheelFixed"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Robot::Wheel</label>
+        <link refid="classRobot_1_1Wheel"/>
+      </node>
+      <node id="1">
+        <label>Robot::WheelFixed</label>
+        <link refid="classRobot_1_1WheelFixed"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="107" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="107" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" prot="public" virt="virtual"><scope>Robot::WheelFixed</scope><name>calculate</name></member>
+      <member refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_distanceFromCentre</name></member>
+      <member refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_idWheel</name></member>
+      <member refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_max_ang_vel</name></member>
+      <member refid="classRobot_1_1Wheel_1ad90d681a9f5e054e1247ecbf6684bed6" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_max_lin_vel</name></member>
+      <member refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_placeInMsg</name></member>
+      <member refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_radius</name></member>
+      <member refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_velocity</name></member>
+      <member refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" prot="public" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>Print</name></member>
+      <member refid="classRobot_1_1Wheel_1ac8072cc4f7de670c43e7a094ff3294d5" prot="public" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>push_msgs</name></member>
+      <member refid="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" prot="public" virt="virtual"><scope>Robot::WheelFixed</scope><name>robotVel</name></member>
+      <member refid="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" prot="public" virt="virtual"><scope>Robot::WheelFixed</scope><name>validate</name></member>
+      <member refid="classRobot_1_1Wheel_1a7c321d6c4dd9387a27943a743c081d98" prot="public" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>Wheel</name></member>
+      <member refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" prot="public" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>Wheel</name></member>
+      <member refid="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" prot="public" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>WheelFixed</name></member>
+      <member refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>wheels_msg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
