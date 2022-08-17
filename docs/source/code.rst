@@ -1,5 +1,5 @@
 ****************
-Code description
+Code Overview
 ****************
 
 .. cpp:namespace:: @ex_index
