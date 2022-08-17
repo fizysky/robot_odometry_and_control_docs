@@ -2,5 +2,5 @@
 Code description
 ****************
 
-.. doxygenclass:: Robot
+.. autodoxygenfile:: Robot.hpp
    
