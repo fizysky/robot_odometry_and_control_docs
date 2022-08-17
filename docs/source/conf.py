@@ -48,3 +48,4 @@ epub_show_urls = 'footnote'
 
 breathe_projects = {"My Project": "../xml/"}
 breathe_default_project = "My Project"
+breathe_default_members = ('members', 'undoc-members')
