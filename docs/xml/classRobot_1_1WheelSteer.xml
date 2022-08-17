@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classRobot_1_1WheelSteer" kind="class" language="C++" prot="protected">
+    <compoundname>Robot::WheelSteer</compoundname>
+    <basecompoundref refid="classRobot_1_1Wheel" prot="public" virt="non-virtual">Robot::Wheel</basecompoundref>
+    <includes refid="Robot_8hpp" local="no">Robot.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" prot="private" static="no" mutable="no">
+        <type>std::array&lt; float, 3 &gt;</type>
+        <definition>std::array&lt;float,3&gt; Robot::WheelSteer::l_m_steerAngle</definition>
+        <argsstring></argsstring>
+        <name>l_m_steerAngle</name>
+        <qualifiedname>Robot::WheelSteer::l_m_steerAngle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="121" column="20" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRobot_1_1WheelSteer_1ad434ceb3a7321a432b7c05ea912f225d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::WheelSteer::WheelSteer</definition>
+        <argsstring>(char, char, float, float, float, float, float, float)</argsstring>
+        <name>WheelSteer</name>
+        <qualifiedname>Robot::WheelSteer::WheelSteer</qualifiedname>
+        <param>
+          <type>char</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>char</type>
+          <defname>place</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>maxAngVel</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>minSterAngle</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>maxSterAngle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="123" column="9" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="216" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Robot::WheelSteer::calculate</definition>
+        <argsstring>(Robot *) override</argsstring>
+        <name>calculate</name>
+        <qualifiedname>Robot::WheelSteer::calculate</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1a96e74ff5e91d6adf0007a633517eb687">calculate</reimplements>
+        <param>
+          <type><ref refid="classRobot" kindref="compound">Robot</ref> *</type>
+          <defname>T</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="124" column="14" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="224" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Robot::WheelSteer::validate</definition>
+        <argsstring>(Eigen::Vector3d &amp;, float omega, float v, float vy)</argsstring>
+        <name>validate</name>
+        <qualifiedname>Robot::WheelSteer::validate</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178">validate</reimplements>
+        <param>
+          <type>Eigen::Vector3d &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="125" column="14" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Robot::WheelSteer::robotVel</definition>
+        <argsstring>(double, std::array&lt; double, 3 &gt; &amp;f) override</argsstring>
+        <name>robotVel</name>
+        <qualifiedname>Robot::WheelSteer::robotVel</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989">robotVel</reimplements>
+        <param>
+          <type>double</type>
+          <defname>linVel</defname>
+        </param>
+        <param>
+          <type>std::array&lt; double, 3 &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="126" column="16" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Robot::Wheel</label>
+        <link refid="classRobot_1_1Wheel"/>
+      </node>
+      <node id="1">
+        <label>Robot::WheelSteer</label>
+        <link refid="classRobot_1_1WheelSteer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Robot::Wheel</label>
+        <link refid="classRobot_1_1Wheel"/>
+      </node>
+      <node id="1">
+        <label>Robot::WheelSteer</label>
+        <link refid="classRobot_1_1WheelSteer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="120" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="120" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>calculate</name></member>
+      <member refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_distanceFromCentre</name></member>
+      <member refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_idWheel</name></member>
+      <member refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_max_ang_vel</name></member>
+      <member refid="classRobot_1_1Wheel_1ad90d681a9f5e054e1247ecbf6684bed6" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_max_lin_vel</name></member>
+      <member refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_placeInMsg</name></member>
+      <member refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_radius</name></member>
+      <member refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" prot="private" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_steerAngle</name></member>
+      <member refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_velocity</name></member>
+      <member refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>Print</name></member>
+      <member refid="classRobot_1_1Wheel_1a3908a58678677006cbfb6f488b318a84" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>push_msgs</name></member>
+      <member refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>robotVel</name></member>
+      <member refid="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>validate</name></member>
+      <member refid="classRobot_1_1Wheel_1a7c321d6c4dd9387a27943a743c081d98" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>Wheel</name></member>
+      <member refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>Wheel</name></member>
+      <member refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>wheels_msg</name></member>
+      <member refid="classRobot_1_1WheelSteer_1ad434ceb3a7321a432b7c05ea912f225d" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>WheelSteer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

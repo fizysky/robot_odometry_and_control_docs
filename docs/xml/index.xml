@@ -1,24 +1,87 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
-  <compound refid="classEntity" kind="class"><name>Entity</name>
-    <member refid="classEntity_1aae071f833fcdfdb6983c4a5aadc7829f" kind="variable"><name>x</name></member>
-    <member refid="classEntity_1a3032094a99240e958512727451630e7b" kind="variable"><name>y</name></member>
-    <member refid="classEntity_1a980f368aa07ce358583982821533a54a" kind="function"><name>Entity</name></member>
-    <member refid="classEntity_1aedf3529531f60a0ceef362f9310e207e" kind="function"><name>print</name></member>
+  <compound refid="classRobot" kind="class"><name>Robot</name>
+    <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" kind="enum"><name>Level</name></member>
+    <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca18696c19a75c89f161a342f0070de60a" kind="enumvalue"><name>Normal</name></member>
+    <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca1101fdce733cf563ddc6fb12e6a73385" kind="enumvalue"><name>Warning</name></member>
+    <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca68b0442ca02bcf158dbb0c21d36cef30" kind="enumvalue"><name>Error</name></member>
+    <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" kind="enum"><name>Command</name></member>
+    <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9ca42bd8d665d1839733e4c8713f2fe578d" kind="enumvalue"><name>Joystic</name></member>
+    <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9caada289166b318af3775f20e8b3d9d050" kind="enumvalue"><name>Keyboard</name></member>
+    <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9cac2aec1f5421b3d7ee0ed7713c9f49417" kind="enumvalue"><name>cmd_vel</name></member>
+    <member refid="classRobot_1aa6f74fabb3788e452280b44602230c4e" kind="variable"><name>m_name</name></member>
+    <member refid="classRobot_1a793aef62fd1fdf6b2415b970f5b3a3d0" kind="variable"><name>m_timer</name></member>
+    <member refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" kind="variable"><name>m_turnRadius</name></member>
+    <member refid="classRobot_1af4a2612d1b372f84121f3c8d9cbc0a7d" kind="variable"><name>m_LogLevel</name></member>
+    <member refid="classRobot_1aea9cebb343d9a015111351d9fcf173ee" kind="variable"><name>m_wheelLog</name></member>
+    <member refid="classRobot_1afdfff60f94cd5509a31d5fc5140db7d9" kind="variable"><name>m_source</name></member>
+    <member refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" kind="variable"><name>m_wheelNumber</name></member>
+    <member refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" kind="variable"><name>m_velocity</name></member>
+    <member refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" kind="variable"><name>m_odom_vel</name></member>
+    <member refid="classRobot_1aa2acd1a99802e973eb1083822cc5ba8b" kind="variable"><name>m_odom_pose</name></member>
+    <member refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kind="variable"><name>m_wheels</name></member>
+    <member refid="classRobot_1ac265eca4ef02f0f0c25c1129199fc609" kind="variable"><name>nh_</name></member>
+    <member refid="classRobot_1a0ba005e2d1f26d578003a463af530a20" kind="variable"><name>odom_broadcaster</name></member>
+    <member refid="classRobot_1ae1fe014ca219829358ad3fae62331bac" kind="variable"><name>robot_sub</name></member>
+    <member refid="classRobot_1ac36de5591e93c22ef5167afe4a77c59d" kind="variable"><name>robot_sub_wheels</name></member>
+    <member refid="classRobot_1a4801c8795ed10cef6db6659417b54c77" kind="variable"><name>robot_pub</name></member>
+    <member refid="classRobot_1a83911d8ba4d46d52edd0a8ecbb093eb0" kind="variable"><name>robot_pub_odom</name></member>
+    <member refid="classRobot_1a894ed752c357327911cd37b030f5c22b" kind="function"><name>Control</name></member>
+    <member refid="classRobot_1aacc9bb8db131709da34a7ad8fe8872a3" kind="function"><name>GetLogLevel</name></member>
+    <member refid="classRobot_1a11a630c1c38858fa041e79769f5dad30" kind="function"><name>calculateOdom</name></member>
+    <member refid="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" kind="function"><name>cmdVelCallback</name></member>
+    <member refid="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" kind="function"><name>wheelVelCallback</name></member>
+    <member refid="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" kind="function"><name>CheckLua</name></member>
+    <member refid="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" kind="function"><name>ReadConfig</name></member>
+    <member refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" kind="function"><name>readField</name></member>
+    <member refid="classRobot_1ae081c54c3268d6f7c4e9acce56a7f2c8" kind="function"><name>Robot</name></member>
+    <member refid="classRobot_1a832271bc0b6f36d0499e81d522c6f330" kind="function"><name>Robot</name></member>
+    <member refid="classRobot_1abed0bb1e50445ca865fd34c743d5fe8c" kind="function"><name>Robot</name></member>
+    <member refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kind="function"><name>Robot</name></member>
+    <member refid="classRobot_1a924320124b09c2f2ac1621aa210d5f38" kind="function"><name>~Robot</name></member>
   </compound>
-  <compound refid="classEntity_1_1Entity__local" kind="class"><name>Entity::Entity_local</name>
-    <member refid="classEntity_1_1Entity__local_1a8d5951aafa353f2d37199304982f6a04" kind="variable"><name>z</name></member>
-    <member refid="classEntity_1_1Entity__local_1a23fdde318fb4733c416b1875334d5ce0" kind="function"><name>foo</name></member>
+  <compound refid="classRobot_1_1Wheel" kind="class"><name>Robot::Wheel</name>
+    <member refid="classRobot_1_1Wheel_1acc54f9fcfc05d13c4ae2fc7329e2e1ad" kind="variable"><name>wheels_msg</name></member>
+    <member refid="classRobot_1_1Wheel_1a0a9d385b69c2f5cd2e69a70c4a09b754" kind="variable"><name>l_m_idWheel</name></member>
+    <member refid="classRobot_1_1Wheel_1aa119b52a662608099adb629e30565a07" kind="variable"><name>l_m_radius</name></member>
+    <member refid="classRobot_1_1Wheel_1a4dc9caf8e082b6d361eda7282247e674" kind="variable"><name>l_m_max_ang_vel</name></member>
+    <member refid="classRobot_1_1Wheel_1ad90d681a9f5e054e1247ecbf6684bed6" kind="variable"><name>l_m_max_lin_vel</name></member>
+    <member refid="classRobot_1_1Wheel_1aa94335aada56ea6d5029e23d4ab5baad" kind="variable"><name>l_m_placeInMsg</name></member>
+    <member refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" kind="variable"><name>l_m_distanceFromCentre</name></member>
+    <member refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" kind="variable"><name>l_m_velocity</name></member>
+    <member refid="classRobot_1_1Wheel_1a7c321d6c4dd9387a27943a743c081d98" kind="function"><name>Wheel</name></member>
+    <member refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" kind="function"><name>Wheel</name></member>
+    <member refid="classRobot_1_1Wheel_1a96e74ff5e91d6adf0007a633517eb687" kind="function"><name>calculate</name></member>
+    <member refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178" kind="function"><name>validate</name></member>
+    <member refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989" kind="function"><name>robotVel</name></member>
+    <member refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" kind="function"><name>Print</name></member>
+    <member refid="classRobot_1_1Wheel_1a3908a58678677006cbfb6f488b318a84" kind="function"><name>push_msgs</name></member>
   </compound>
-  <compound refid="plik_8hpp" kind="file"><name>plik.hpp</name>
+  <compound refid="classRobot_1_1WheelFixed" kind="class"><name>Robot::WheelFixed</name>
+    <member refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" kind="function"><name>calculate</name></member>
+    <member refid="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" kind="function"><name>validate</name></member>
+    <member refid="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" kind="function"><name>WheelFixed</name></member>
+    <member refid="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" kind="function"><name>robotVel</name></member>
+  </compound>
+  <compound refid="classRobot_1_1WheelSteer" kind="class"><name>Robot::WheelSteer</name>
+    <member refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" kind="variable"><name>l_m_steerAngle</name></member>
+    <member refid="classRobot_1_1WheelSteer_1ad434ceb3a7321a432b7c05ea912f225d" kind="function"><name>WheelSteer</name></member>
+    <member refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" kind="function"><name>calculate</name></member>
+    <member refid="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" kind="function"><name>validate</name></member>
+    <member refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" kind="function"><name>robotVel</name></member>
+  </compound>
+  <compound refid="Robot_8hpp" kind="file"><name>Robot.hpp</name>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="plik_8cpp" kind="file"><name>plik.cpp</name>
+  <compound refid="Robot_8cpp" kind="file"><name>Robot.cpp</name>
+    <member refid="Robot_8cpp_1a91c3e63f152b8843e5297b7bc8aa1676" kind="define"><name>PASS</name></member>
   </compound>
-  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/fizysky/Programowanie/dokumentacja/include</name>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/fizysky/Programowanie/dokumentacja/src</name>
+  <compound refid="dir_7cf32c2c93d1e8a683166f09d201233e" kind="dir"><name>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src</name>
   </compound>
 </doxygenindex>

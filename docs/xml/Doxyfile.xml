@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.9.5" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
-  <option  id='PROJECT_NAME' default='yes' type='string'><value><![CDATA["My Project"]]></value></option>
+  <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[mobie_robots_kinematic]]></value></option>
   <option  id='PROJECT_NUMBER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_BRIEF' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_LOGO' default='yes' type='string'><value><![CDATA[]]></value></option>
@@ -67,7 +67,7 @@
   <option  id='NUM_PROC_THREADS' default='yes' type='int'><value>1</value></option>
   <option  id='EXTRACT_ALL' default='no' type='bool'><value>YES</value></option>
   <option  id='EXTRACT_PRIVATE' default='no' type='bool'><value>YES</value></option>
-  <option  id='EXTRACT_PRIV_VIRTUAL' default='yes' type='bool'><value>NO</value></option>
+  <option  id='EXTRACT_PRIV_VIRTUAL' default='no' type='bool'><value>YES</value></option>
   <option  id='EXTRACT_PACKAGE' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_STATIC' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_LOCAL_CLASSES' default='yes' type='bool'><value>YES</value></option>
@@ -118,8 +118,8 @@
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA[../include]]></value>
     <value><![CDATA[../src]]></value>
+    <value><![CDATA[../include/mobie_robots_kinematic]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='FILE_PATTERNS' default='yes' type='stringlist'>
@@ -306,7 +306,7 @@
   <option  id='MAN_SUBDIR' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='MAN_LINKS' default='yes' type='bool'><value>NO</value></option>
   <option  id='GENERATE_XML' default='no' type='bool'><value>YES</value></option>
-  <option  id='XML_OUTPUT' default='yes' type='string'><value><![CDATA[xml]]></value></option>
+  <option  id='XML_OUTPUT' default='no' type='string'><value><![CDATA[/home/fizysky/LIDER/ros_ws/src/robot_odometry_and_control_docs/docs/xml]]></value></option>
   <option  id='XML_PROGRAMLISTING' default='yes' type='bool'><value>YES</value></option>
   <option  id='XML_NS_MEMB_FILE_SCOPE' default='yes' type='bool'><value>NO</value></option>
   <option  id='GENERATE_DOCBOOK' default='yes' type='bool'><value>NO</value></option>
@@ -320,9 +320,12 @@
   <option  id='MACRO_EXPANSION' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXPAND_ONLY_PREDEF' default='yes' type='bool'><value>NO</value></option>
   <option  id='SEARCH_INCLUDES' default='yes' type='bool'><value>YES</value></option>
-  <option  id='INCLUDE_PATH' default='yes' type='stringlist'>
+  <option  id='INCLUDE_PATH' default='no' type='stringlist'>
+    <value><![CDATA[../include]]></value>
   </option>
-  <option  id='INCLUDE_FILE_PATTERNS' default='yes' type='stringlist'>
+  <option  id='INCLUDE_FILE_PATTERNS' default='no' type='stringlist'>
+    <value><![CDATA[*.h]]></value>
+    <value><![CDATA[*.hpp]]></value>
   </option>
   <option  id='PREDEFINED' default='yes' type='stringlist'>
   </option>

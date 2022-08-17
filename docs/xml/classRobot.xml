@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classRobot" kind="class" language="C++" prot="public">
+    <compoundname>Robot</compoundname>
+    <includes refid="Robot_8hpp" local="no">Robot.hpp</includes>
+    <innerclass refid="classRobot_1_1Wheel" prot="protected">Robot::Wheel</innerclass>
+    <innerclass refid="classRobot_1_1WheelFixed" prot="protected">Robot::WheelFixed</innerclass>
+    <innerclass refid="classRobot_1_1WheelSteer" prot="protected">Robot::WheelSteer</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Level</name>
+        <qualifiedname>Robot::Level</qualifiedname>
+        <enumvalue id="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca18696c19a75c89f161a342f0070de60a" prot="public">
+          <name>Normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca1101fdce733cf563ddc6fb12e6a73385" prot="public">
+          <name>Warning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca68b0442ca02bcf158dbb0c21d36cef30" prot="public">
+          <name>Error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="60" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Command</name>
+        <qualifiedname>Robot::Command</qualifiedname>
+        <enumvalue id="classRobot_1a6a113494c4e919d7daa83b85c4a20f9ca42bd8d665d1839733e4c8713f2fe578d" prot="public">
+          <name>Joystic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classRobot_1a6a113494c4e919d7daa83b85c4a20f9caada289166b318af3775f20e8b3d9d050" prot="public">
+          <name>Keyboard</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classRobot_1a6a113494c4e919d7daa83b85c4a20f9cac2aec1f5421b3d7ee0ed7713c9f49417" prot="public">
+          <name>cmd_vel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="63" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classRobot_1aa6f74fabb3788e452280b44602230c4e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Robot::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <qualifiedname>Robot::m_name</qualifiedname>
+        <briefdescription>
+<para>test </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="58" column="17" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a793aef62fd1fdf6b2415b970f5b3a3d0" prot="public" static="no" mutable="no">
+        <type>ros::Timer</type>
+        <definition>ros::Timer Robot::m_timer</definition>
+        <argsstring></argsstring>
+        <name>m_timer</name>
+        <qualifiedname>Robot::m_timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="59" column="16" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRobot_1a520181d77aa2b9bb1263845505574b4e" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d Robot::m_turnRadius</definition>
+        <argsstring></argsstring>
+        <name>m_turnRadius</name>
+        <qualifiedname>Robot::m_turnRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="68" column="21" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1af4a2612d1b372f84121f3c8d9cbc0a7d" prot="private" static="no" mutable="no">
+        <type><ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" kindref="member">Level</ref></type>
+        <definition>Level Robot::m_LogLevel</definition>
+        <argsstring></argsstring>
+        <name>m_LogLevel</name>
+        <qualifiedname>Robot::m_LogLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="69" column="11" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1aea9cebb343d9a015111351d9fcf173ee" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" kindref="member">Level</ref> &gt;</type>
+        <definition>std::vector&lt;Level&gt; Robot::m_wheelLog</definition>
+        <argsstring></argsstring>
+        <name>m_wheelLog</name>
+        <qualifiedname>Robot::m_wheelLog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="70" column="17" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1afdfff60f94cd5509a31d5fc5140db7d9" prot="private" static="no" mutable="no">
+        <type><ref refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" kindref="member">Command</ref></type>
+        <definition>Command Robot::m_source</definition>
+        <argsstring></argsstring>
+        <name>m_source</name>
+        <qualifiedname>Robot::m_source</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="71" column="13" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a303630224c54289fa6c2f3df89d572b8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Robot::m_wheelNumber</definition>
+        <argsstring></argsstring>
+        <name>m_wheelNumber</name>
+        <qualifiedname>Robot::m_wheelNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="75" column="9" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" prot="private" static="no" mutable="no">
+        <type>std::array&lt; double, 3 &gt;</type>
+        <definition>std::array&lt;double, 3&gt; Robot::m_velocity</definition>
+        <argsstring></argsstring>
+        <name>m_velocity</name>
+        <qualifiedname>Robot::m_velocity</qualifiedname>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="76" column="16" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" prot="private" static="no" mutable="no">
+        <type>std::array&lt; double, 3 &gt;</type>
+        <definition>std::array&lt;double, 3&gt; Robot::m_odom_vel</definition>
+        <argsstring></argsstring>
+        <name>m_odom_vel</name>
+        <qualifiedname>Robot::m_odom_vel</qualifiedname>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="77" column="16" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1aa2acd1a99802e973eb1083822cc5ba8b" prot="private" static="no" mutable="no">
+        <type>std::array&lt; double, 3 &gt;</type>
+        <definition>std::array&lt;double, 3&gt; Robot::m_odom_pose</definition>
+        <argsstring></argsstring>
+        <name>m_odom_pose</name>
+        <qualifiedname>Robot::m_odom_pose</qualifiedname>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="78" column="16" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::unique_ptr&lt; <ref refid="classRobot_1_1Wheel" kindref="compound">Wheel</ref> &gt; &gt;</type>
+        <definition>std::map&lt;int, std::unique_ptr&lt;Wheel&gt; &gt; Robot::m_wheels</definition>
+        <argsstring></argsstring>
+        <name>m_wheels</name>
+        <qualifiedname>Robot::m_wheels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="147" column="14" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ac265eca4ef02f0f0c25c1129199fc609" prot="private" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle Robot::nh_</definition>
+        <argsstring></argsstring>
+        <name>nh_</name>
+        <qualifiedname>Robot::nh_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="162" column="21" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a0ba005e2d1f26d578003a463af530a20" prot="private" static="no" mutable="no">
+        <type>tf::TransformBroadcaster</type>
+        <definition>tf::TransformBroadcaster Robot::odom_broadcaster</definition>
+        <argsstring></argsstring>
+        <name>odom_broadcaster</name>
+        <qualifiedname>Robot::odom_broadcaster</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="164" column="30" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ae1fe014ca219829358ad3fae62331bac" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber Robot::robot_sub</definition>
+        <argsstring></argsstring>
+        <name>robot_sub</name>
+        <qualifiedname>Robot::robot_sub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="166" column="21" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ac36de5591e93c22ef5167afe4a77c59d" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber Robot::robot_sub_wheels</definition>
+        <argsstring></argsstring>
+        <name>robot_sub_wheels</name>
+        <qualifiedname>Robot::robot_sub_wheels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="167" column="21" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a4801c8795ed10cef6db6659417b54c77" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Robot::robot_pub</definition>
+        <argsstring></argsstring>
+        <name>robot_pub</name>
+        <qualifiedname>Robot::robot_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="169" column="20" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a83911d8ba4d46d52edd0a8ecbb093eb0" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Robot::robot_pub_odom</definition>
+        <argsstring></argsstring>
+        <name>robot_pub_odom</name>
+        <qualifiedname>Robot::robot_pub_odom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="170" column="20" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classRobot_1a894ed752c357327911cd37b030f5c22b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::Control</definition>
+        <argsstring>()</argsstring>
+        <name>Control</name>
+        <qualifiedname>Robot::Control</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aacc9bb8db131709da34a7ad8fe8872a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Robot::GetLogLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetLogLevel</name>
+        <qualifiedname>Robot::GetLogLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="143" column="9" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a11a630c1c38858fa041e79769f5dad30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::calculateOdom</definition>
+        <argsstring>()</argsstring>
+        <name>calculateOdom</name>
+        <qualifiedname>Robot::calculateOdom</qualifiedname>
+        <briefdescription>
+<para>Base on robot velocity, calculate posion and publish odom tf and msgs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="144" column="10" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::cmdVelCallback</definition>
+        <argsstring>(const geometry_msgs::Twist::ConstPtr &amp;cmd)</argsstring>
+        <name>cmdVelCallback</name>
+        <qualifiedname>Robot::cmdVelCallback</qualifiedname>
+        <param>
+          <type>const geometry_msgs::Twist::ConstPtr &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="172" column="10" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="110" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::wheelVelCallback</definition>
+        <argsstring>(const mobie_robots_kinematic::VelocityWheel::ConstPtr &amp;vel)</argsstring>
+        <name>wheelVelCallback</name>
+        <qualifiedname>Robot::wheelVelCallback</qualifiedname>
+        <param>
+          <type>const mobie_robots_kinematic::VelocityWheel::ConstPtr &amp;</type>
+          <declname>vel</declname>
+        </param>
+        <briefdescription>
+<para>Function that takes real values of all wheels welocity and calculates robots&apos; velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a ros messeges that contains feedback information from robots motors </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>sum each wheel velocity and take average of it</para>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="173" column="10" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="138" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::CheckLua</definition>
+        <argsstring>(lua_State *L, int r)</argsstring>
+        <name>CheckLua</name>
+        <qualifiedname>Robot::CheckLua</qualifiedname>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="180" column="6" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::ReadConfig</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>ReadConfig</name>
+        <qualifiedname>Robot::ReadConfig</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>plik_</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="181" column="6" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="281" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::readField</definition>
+        <argsstring>(lua_State *, const char *)</argsstring>
+        <name>readField</name>
+        <qualifiedname>Robot::readField</qualifiedname>
+        <param>
+          <type>lua_State *</type>
+          <defname>L</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="182" column="6" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="271" bodyend="279"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRobot_1ae081c54c3268d6f7c4e9acce56a7f2c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>(std::string robot_name)</argsstring>
+        <name>Robot</name>
+        <qualifiedname>Robot::Robot</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>robot_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="149" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a832271bc0b6f36d0499e81d522c6f330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>(std::string robot_name, float rate_pub)</argsstring>
+        <name>Robot</name>
+        <qualifiedname>Robot::Robot</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>robot_name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rate_pub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="150" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1abed0bb1e50445ca865fd34c743d5fe8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>(std::string robot_name, float rate_pub, std::string)</argsstring>
+        <name>Robot</name>
+        <qualifiedname>Robot::Robot</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>robot_name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rate_pub</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <defname>plik_</defname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classRobot" kindref="compound">Robot</ref>:: <ref refid="classRobot" kindref="compound">Robot</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>robot_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate_pub</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plik_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="151" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="60" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>()</argsstring>
+        <name>Robot</name>
+        <qualifiedname>Robot::Robot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="152" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a924320124b09c2f2ac1621aa210d5f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::~Robot</definition>
+        <argsstring>()</argsstring>
+        <name>~Robot</name>
+        <qualifiedname>Robot::~Robot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="153" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/src/Robot.cpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>hh </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="52" column="1" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="52" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classRobot_1a11a630c1c38858fa041e79769f5dad30" prot="private" virt="non-virtual"><scope>Robot</scope><name>calculateOdom</name></member>
+      <member refid="classRobot_1a6eabddc5e4f48478dcb2699bf087f943" prot="private" virt="non-virtual"><scope>Robot</scope><name>CheckLua</name></member>
+      <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9cac2aec1f5421b3d7ee0ed7713c9f49417" prot="public" virt="non-virtual"><scope>Robot</scope><name>cmd_vel</name></member>
+      <member refid="classRobot_1a6c2ff0adf0388359680f7bb7b49753c5" prot="private" virt="non-virtual"><scope>Robot</scope><name>cmdVelCallback</name></member>
+      <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9c" prot="public" virt="non-virtual"><scope>Robot</scope><name>Command</name></member>
+      <member refid="classRobot_1a894ed752c357327911cd37b030f5c22b" prot="private" virt="non-virtual"><scope>Robot</scope><name>Control</name></member>
+      <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca68b0442ca02bcf158dbb0c21d36cef30" prot="public" virt="non-virtual"><scope>Robot</scope><name>Error</name></member>
+      <member refid="classRobot_1aacc9bb8db131709da34a7ad8fe8872a3" prot="private" virt="non-virtual"><scope>Robot</scope><name>GetLogLevel</name></member>
+      <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9ca42bd8d665d1839733e4c8713f2fe578d" prot="public" virt="non-virtual"><scope>Robot</scope><name>Joystic</name></member>
+      <member refid="classRobot_1a6a113494c4e919d7daa83b85c4a20f9caada289166b318af3775f20e8b3d9d050" prot="public" virt="non-virtual"><scope>Robot</scope><name>Keyboard</name></member>
+      <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84ac" prot="public" virt="non-virtual"><scope>Robot</scope><name>Level</name></member>
+      <member refid="classRobot_1af4a2612d1b372f84121f3c8d9cbc0a7d" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_LogLevel</name></member>
+      <member refid="classRobot_1aa6f74fabb3788e452280b44602230c4e" prot="public" virt="non-virtual"><scope>Robot</scope><name>m_name</name></member>
+      <member refid="classRobot_1aa2acd1a99802e973eb1083822cc5ba8b" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_odom_pose</name></member>
+      <member refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_odom_vel</name></member>
+      <member refid="classRobot_1afdfff60f94cd5509a31d5fc5140db7d9" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_source</name></member>
+      <member refid="classRobot_1a793aef62fd1fdf6b2415b970f5b3a3d0" prot="public" virt="non-virtual"><scope>Robot</scope><name>m_timer</name></member>
+      <member refid="classRobot_1a520181d77aa2b9bb1263845505574b4e" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_turnRadius</name></member>
+      <member refid="classRobot_1a1d97601f75803e1cadc8b6a1e02d7a3b" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_velocity</name></member>
+      <member refid="classRobot_1aea9cebb343d9a015111351d9fcf173ee" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_wheelLog</name></member>
+      <member refid="classRobot_1a303630224c54289fa6c2f3df89d572b8" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_wheelNumber</name></member>
+      <member refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_wheels</name></member>
+      <member refid="classRobot_1ac265eca4ef02f0f0c25c1129199fc609" prot="private" virt="non-virtual"><scope>Robot</scope><name>nh_</name></member>
+      <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca18696c19a75c89f161a342f0070de60a" prot="public" virt="non-virtual"><scope>Robot</scope><name>Normal</name></member>
+      <member refid="classRobot_1a0ba005e2d1f26d578003a463af530a20" prot="private" virt="non-virtual"><scope>Robot</scope><name>odom_broadcaster</name></member>
+      <member refid="classRobot_1aad6b6dc6e553ddc69fa36ecfd7685320" prot="private" virt="non-virtual"><scope>Robot</scope><name>ReadConfig</name></member>
+      <member refid="classRobot_1acec83a199d32eeb08093f4ed6a9716fe" prot="private" virt="non-virtual"><scope>Robot</scope><name>readField</name></member>
+      <member refid="classRobot_1ae081c54c3268d6f7c4e9acce56a7f2c8" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="classRobot_1a832271bc0b6f36d0499e81d522c6f330" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="classRobot_1abed0bb1e50445ca865fd34c743d5fe8c" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="classRobot_1a4801c8795ed10cef6db6659417b54c77" prot="private" virt="non-virtual"><scope>Robot</scope><name>robot_pub</name></member>
+      <member refid="classRobot_1a83911d8ba4d46d52edd0a8ecbb093eb0" prot="private" virt="non-virtual"><scope>Robot</scope><name>robot_pub_odom</name></member>
+      <member refid="classRobot_1ae1fe014ca219829358ad3fae62331bac" prot="private" virt="non-virtual"><scope>Robot</scope><name>robot_sub</name></member>
+      <member refid="classRobot_1ac36de5591e93c22ef5167afe4a77c59d" prot="private" virt="non-virtual"><scope>Robot</scope><name>robot_sub_wheels</name></member>
+      <member refid="classRobot_1aab6d9348c53ae68a545c2f3d59ad84aca1101fdce733cf563ddc6fb12e6a73385" prot="public" virt="non-virtual"><scope>Robot</scope><name>Warning</name></member>
+      <member refid="classRobot_1a829094a909e6d6acb6babdf1cd22ca32" prot="private" virt="non-virtual"><scope>Robot</scope><name>wheelVelCallback</name></member>
+      <member refid="classRobot_1a924320124b09c2f2ac1621aa210d5f38" prot="public" virt="non-virtual"><scope>Robot</scope><name>~Robot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
