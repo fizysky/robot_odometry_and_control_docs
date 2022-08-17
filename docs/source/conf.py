@@ -46,7 +46,7 @@ html_logo = "images/logoW.png"
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-breathe_projects = {"My Project": "/home/fizysky/LIDER/ros_ws/src/robot_odometry_and_control_docs/docs/xml"}
+breathe_projects = {"My Project": "../xml/"}
 breathe_default_project = "My Project"
 
 breathe_projects = {
