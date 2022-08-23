@@ -10,31 +10,3 @@ kinematics:
 * Sterred
 * Omnidirectional
 
-
-
-.. note::
-
-   This project is under active development.
-   
-.. toctree::
-   :maxdepth: 2
-   :caption: Getting started
-   
-   para
-   lua
-
-.. toctree::
-   :caption: Code
-   :hidden:
-   
-   code
-   code2
-
-
-
-.. Indices and tables
-.. ==================
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
