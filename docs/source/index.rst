@@ -6,6 +6,8 @@ any user define kinematics and also can calculate odometry base on  measurements
 from each wheel. There are three posible wheels types which can be use to create robot 
 kinematics:
 
+:ref:`. <main>`
+
 * Fixed 
 * Sterred
 * Omnidirectional
