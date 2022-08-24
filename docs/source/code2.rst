@@ -8,7 +8,7 @@ Code detalied desciption
    :private-members:
    :outline:
 
-.. doxygenclass:: Wheel
+.. doxygenclass:: Robot::Wheel
    :protected-members:
    :private-members:
    :outline:
