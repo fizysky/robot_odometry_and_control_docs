@@ -12,3 +12,13 @@ Code detalied desciption
    :protected-members:
    :private-members:
    :outline:
+
+.. doxygenclass:: Robot::WheelFixed
+   :protected-members:
+   :private-members:
+   :outline:
+
+.. doxygenclass:: Robot::WheelSteer
+   :protected-members:
+   :private-members:
+   :outline:
