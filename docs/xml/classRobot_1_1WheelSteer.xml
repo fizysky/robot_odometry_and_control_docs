@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="118" column="20" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="118" bodyend="-1"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="124" column="20" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="124" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="120" column="9"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="126" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="121" column="14"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="127" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -105,29 +105,51 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="122" column="14" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="122" bodyend="122"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="128" column="14" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="128" bodyend="128"/>
       </memberdef>
-      <memberdef kind="function" id="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>double</type>
-        <definition>double Robot::WheelSteer::robotVel</definition>
+      <memberdef kind="function" id="classRobot_1_1WheelSteer_1a6a5b886e30212742305af8d902740d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Robot::WheelSteer::robotWheelVel</definition>
         <argsstring>(double, std::array&lt; double, 3 &gt; &amp;f) override</argsstring>
-        <name>robotVel</name>
-        <qualifiedname>Robot::WheelSteer::robotVel</qualifiedname>
-        <reimplements refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989">robotVel</reimplements>
+        <name>robotWheelVel</name>
+        <qualifiedname>Robot::WheelSteer::robotWheelVel</qualifiedname>
+        <reimplements refid="classRobot_1_1Wheel_1aa7e798b8c25470a58879e6686045b5cf">robotWheelVel</reimplements>
         <param>
           <type>double</type>
+          <declname>v</declname>
         </param>
         <param>
           <type>std::array&lt; double, 3 &gt; &amp;</type>
           <declname>f</declname>
         </param>
         <briefdescription>
+<para>przyjmuje prędkość liniową koła i zwraca prędkość(lin&amp;ang) robota powodowaną przez dane koło (rzeczywisete) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>velocity array [lin x | lin y | ang z] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>real vheel linear velocity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="123" column="16"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="129" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -158,7 +180,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="117" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="117" bodyend="124"/>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="123" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="123" bodyend="130"/>
     <listofallmembers>
       <member refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>calculate</name></member>
       <member refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_distanceFromCentre</name></member>
@@ -171,7 +193,7 @@
       <member refid="classRobot_1_1Wheel_1a08e88d47e5d19bc3871d414d1442ccfb" prot="protected" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>l_m_velocity</name></member>
       <member refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>Print</name></member>
       <member refid="classRobot_1_1Wheel_1ac8072cc4f7de670c43e7a094ff3294d5" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>push_msgs</name></member>
-      <member refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>robotVel</name></member>
+      <member refid="classRobot_1_1WheelSteer_1a6a5b886e30212742305af8d902740d48" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>robotWheelVel</name></member>
       <member refid="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" prot="public" virt="virtual"><scope>Robot::WheelSteer</scope><name>validate</name></member>
       <member refid="classRobot_1_1Wheel_1a7c321d6c4dd9387a27943a743c081d98" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>Wheel</name></member>
       <member refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" prot="public" virt="non-virtual"><scope>Robot::WheelSteer</scope><name>Wheel</name></member>

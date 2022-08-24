@@ -20,6 +20,8 @@
     <member refid="classRobot_1acc36a6a45f9f5425dc8a150917e0380f" kind="variable"><name>m_odom_vel</name></member>
     <member refid="classRobot_1aa2acd1a99802e973eb1083822cc5ba8b" kind="variable"><name>m_odom_pose</name></member>
     <member refid="classRobot_1a05ce9e372bc56e1f6b5530aea5754296" kind="variable"><name>m_wheels</name></member>
+    <member refid="classRobot_1a3e142afe8e526728426f1285fee5b63a" kind="variable"><name>m_current_time</name></member>
+    <member refid="classRobot_1aebe925032864cf3dab2bafa0e3dd41de" kind="variable"><name>m_last_time</name></member>
     <member refid="classRobot_1ac265eca4ef02f0f0c25c1129199fc609" kind="variable"><name>nh_</name></member>
     <member refid="classRobot_1a0ba005e2d1f26d578003a463af530a20" kind="variable"><name>odom_broadcaster</name></member>
     <member refid="classRobot_1ae1fe014ca219829358ad3fae62331bac" kind="variable"><name>robot_sub</name></member>
@@ -53,7 +55,7 @@
     <member refid="classRobot_1_1Wheel_1aa5a04cea9590054d46a5fa199f74d388" kind="function"><name>Wheel</name></member>
     <member refid="classRobot_1_1Wheel_1a96e74ff5e91d6adf0007a633517eb687" kind="function"><name>calculate</name></member>
     <member refid="classRobot_1_1Wheel_1a526239232d893a49444dcb33743e7178" kind="function"><name>validate</name></member>
-    <member refid="classRobot_1_1Wheel_1aa5ef5034d686098685afbad3913be989" kind="function"><name>robotVel</name></member>
+    <member refid="classRobot_1_1Wheel_1aa7e798b8c25470a58879e6686045b5cf" kind="function"><name>robotWheelVel</name></member>
     <member refid="classRobot_1_1Wheel_1a107daabd48e7ab638b6deaa029c30778" kind="function"><name>Print</name></member>
     <member refid="classRobot_1_1Wheel_1ac8072cc4f7de670c43e7a094ff3294d5" kind="function"><name>push_msgs</name></member>
   </compound>
@@ -61,14 +63,14 @@
     <member refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" kind="function"><name>calculate</name></member>
     <member refid="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" kind="function"><name>validate</name></member>
     <member refid="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" kind="function"><name>WheelFixed</name></member>
-    <member refid="classRobot_1_1WheelFixed_1acaac0caebd537d594bb83d0c763d6a85" kind="function"><name>robotVel</name></member>
+    <member refid="classRobot_1_1WheelFixed_1aea34d106dcd0fb9bf30738a9a180dbe4" kind="function"><name>robotWheelVel</name></member>
   </compound>
   <compound refid="classRobot_1_1WheelSteer" kind="class"><name>Robot::WheelSteer</name>
     <member refid="classRobot_1_1WheelSteer_1a7f3cdcbf07e00b0102631a2eed0060ed" kind="variable"><name>l_m_steerAngle</name></member>
     <member refid="classRobot_1_1WheelSteer_1ad434ceb3a7321a432b7c05ea912f225d" kind="function"><name>WheelSteer</name></member>
     <member refid="classRobot_1_1WheelSteer_1acf8583bc1e10df08549c40ba2790fbb4" kind="function"><name>calculate</name></member>
     <member refid="classRobot_1_1WheelSteer_1a8bb7223c9da517d099fdd4818c983509" kind="function"><name>validate</name></member>
-    <member refid="classRobot_1_1WheelSteer_1ab8b839e02a50e7a8f7dfd0c1e2ed30b5" kind="function"><name>robotVel</name></member>
+    <member refid="classRobot_1_1WheelSteer_1a6a5b886e30212742305af8d902740d48" kind="function"><name>robotWheelVel</name></member>
   </compound>
   <compound refid="Robot_8hpp" kind="file"><name>Robot.hpp</name>
   </compound>
