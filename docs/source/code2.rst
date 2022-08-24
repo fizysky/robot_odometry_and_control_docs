@@ -19,6 +19,7 @@ Code detalied desciption
    :outline:
 
 .. doxygenclass:: Robot::WheelSteer
+   :members:
    :protected-members:
    :private-members:
    :outline:
