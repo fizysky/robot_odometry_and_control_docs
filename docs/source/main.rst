@@ -1,3 +1,5 @@
+.. _main:
+
 Robot odometry & control Documentation
 ======================================
 
@@ -6,9 +8,26 @@ any user define kinematics and also can calculate odometry base on  measurements
 from each wheel. There are three posible wheels types which can be use to create robot 
 kinematics:
 
-:ref:`. <main>`
-
 * Fixed 
 * Sterred
 * Omnidirectional
 
+
+
+.. note::
+
+   This project is under active development.
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Getting started
+   
+   para
+   lua
+
+.. toctree::
+   :caption: Code
+   :hidden:
+   
+   code
+   code2
