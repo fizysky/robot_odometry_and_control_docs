@@ -7,3 +7,8 @@ Code detalied desciption
    :protected-members:
    :private-members:
    :outline:
+
+.. doxygenclass:: Wheel
+   :protected-members:
+   :private-members:
+   :outline:
