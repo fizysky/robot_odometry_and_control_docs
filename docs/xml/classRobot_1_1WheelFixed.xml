@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="115" column="14"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="114" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1_1WheelFixed_1acbbcad2b5d29966d853424e2374c6b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="116" column="14"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="115" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1_1WheelFixed_1adf65cae187616bac6c6545153102ec55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="117" column="9"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="116" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classRobot_1_1WheelFixed_1aea34d106dcd0fb9bf30738a9a180dbe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -122,13 +122,11 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>double </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="118" column="14"/>
+        <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="117" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -159,7 +157,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="113" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="113" bodyend="120"/>
+    <location file="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" line="112" column="5" bodyfile="/home/fizysky/LIDER/ros_ws/src/mobie_robots_kinematic/include/mobie_robots_kinematic/Robot.hpp" bodystart="112" bodyend="119"/>
     <listofallmembers>
       <member refid="classRobot_1_1WheelFixed_1afdb6b06d3d7a8e449d2f1178e8687bbe" prot="public" virt="virtual"><scope>Robot::WheelFixed</scope><name>calculate</name></member>
       <member refid="classRobot_1_1Wheel_1a7f64237ef94a5630478826117c219043" prot="protected" virt="non-virtual"><scope>Robot::WheelFixed</scope><name>l_m_distanceFromCentre</name></member>
