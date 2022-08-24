@@ -22,5 +22,4 @@ Code detalied desciption
    :members:
    :protected-members:
    :private-members:
-   :outline:
    :undoc-members:
