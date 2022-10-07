@@ -22,7 +22,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'revitron_sphinx_theme',
     "breathe",
 ]
 
@@ -36,8 +35,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'revitron_sphinx_theme'
-html_theme_path = ["../../", ]
+html_theme = 'furo'
 
 html_theme_options = {
     'collapse_navigation': False,
