@@ -3,25 +3,6 @@
 import sys
 import re
 import subprocess, os
-# If we are building locally, or the build on Read the Docs looks like a PR
-# build, prefer to use the version of the theme in this repo, not the installed
-# version of the theme.
-def is_development_build():
-    # PR builds have an interger version
-    re_version = re.compile(r'^[\d]+$')
-    if 'READTHEDOCS' in os.environ:
-        version = os.environ.get('READTHEDOCS_VERSION', '')
-        if re_version.match(version):
-            return True
-        return False
-    return True
-
-if is_development_build():
-    sys.path.insert(0, os.path.abspath('..'))
-sys.path.append(os.path.abspath('./demo/'))
-
-import revitron_sphinx_theme
-from sphinx.locale import _
 # -- Project information
 
 
