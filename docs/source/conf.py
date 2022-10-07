@@ -32,7 +32,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'furo'
+html_theme = 'revitron_sphinx_theme'
 
 html_theme_options = {
     'collapse_navigation': False,
