@@ -21,6 +21,7 @@ if is_development_build():
 sys.path.append(os.path.abspath('./demo/'))
 
 import revitron_sphinx_theme
+from sphinx.locale import _
 # -- Project information
 
 
