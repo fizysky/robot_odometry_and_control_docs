@@ -3,7 +3,7 @@
 # -- Project information
 
 import subprocess, os
-import revitron_sphinx_theme
+# import revitron_sphinx_theme
 project = 'Robot\n odometry & control'
 copyright = '2022, Piotr'
 author = 'Piotr'
