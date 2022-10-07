@@ -2,7 +2,7 @@
 
 import sys
 import re
-
+import subprocess, os
 # If we are building locally, or the build on Read the Docs looks like a PR
 # build, prefer to use the version of the theme in this repo, not the installed
 # version of the theme.
@@ -23,7 +23,7 @@ sys.path.append(os.path.abspath('./demo/'))
 import revitron_sphinx_theme
 # -- Project information
 
-import subprocess, os
+
 
 project = 'Robot\n odometry & control'
 copyright = '2022, Piotr'
